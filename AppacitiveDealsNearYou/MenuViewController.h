@@ -6,10 +6,8 @@
 //  Copyright (c) 2013 Appacitive. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
 #import <ECSlidingViewController/ECSlidingViewController.h>
 
-@interface MenuViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, UITabBarControllerDelegate>
-- (IBAction)backToDealsList:(id)sender;
+@interface MenuViewController : UITableViewController
 
 @end

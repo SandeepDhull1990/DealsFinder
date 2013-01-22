@@ -8,23 +8,25 @@
 
 #import "StoreCell.h"
 
-@implementation StoreCell
-@synthesize storeImageView, storeNameLabel, storeAddressLabel, storePhoneLabel;
+@interface StoreCell()
+@property (weak, nonatomic) IBOutlet UIImageView *storeImageView;
+@property (weak, nonatomic) IBOutlet UILabel *storeAddressLabel;
+@property (weak, nonatomic) IBOutlet UILabel *storeNameLabel;
+@property (weak, nonatomic) IBOutlet UILabel *storePhoneLabel;
+@end
 
-- (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
-{
+@implementation StoreCell
+
+- (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
-        // Initialization code
+
     }
     return self;
 }
 
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated
-{
+- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];
-
-    // Configure the view for the selected state
 }
 
 @end

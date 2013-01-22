@@ -6,8 +6,6 @@
 //  Copyright (c) 2013 Appacitive. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-
 @interface Store : NSObject
 @property (strong, nonatomic) NSString *storeName;
 @property (strong, nonatomic) NSString *storeImageUrl;

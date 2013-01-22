@@ -9,9 +9,8 @@
 #import "Store.h"
 
 @implementation Store
-@synthesize storeName, storeAddress, storePhone, storeImageUrl, storeImageFilename, storeImageKey;
 
 - (NSString *)description {
-    return [NSString stringWithFormat:@"Stores fetched are - Name: %@, Address:%@, Phone No.:%@", storeName, storeAddress, storePhone];
+    return [NSString stringWithFormat:@"Stores fetched are - Name: %@, Address:%@, Phone No.:%@", _storeName, _storeAddress, _storePhone];
 }
 @end

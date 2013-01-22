@@ -6,13 +6,15 @@
 //  Copyright (c) 2013 Appacitive. All rights reserved.
 //
 
-//@class ViewController;
-#import <Appacitive-iOS-SDK/Appacitive.h>
 #import "NavigationTopViewController.h"
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
-extern NSString *const SCSessionStateChangedNotification;
-@property (strong, nonatomic) UIWindow *window;
-- (void)openSession;
+#define ApplicationDelegate ((AppDelegate *)[UIApplication sharedApplication].delegate)
 
+@interface AppDelegate : UIResponder <UIApplicationDelegate>
+
+extern NSString *const SCSessionStateChangedNotification;
+
+@property (strong, nonatomic) UIWindow *window;
+
+- (void)openSession;
 @end

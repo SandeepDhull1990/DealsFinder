@@ -68,7 +68,7 @@
     }
     Store *store = [stores objectAtIndex:indexPath.row];
     
-    cell.storeNameLabel.text = [store storeName];
+//    cell.storeNameLabel.text = [store storeName];
     NSLog(@"storeImages count is %d", [storeImages count]);
 
     NSString * pngIndex = [NSString stringWithFormat:@"store%d.png",indexPath.row];
@@ -81,7 +81,7 @@
     }successHandler:^() {
         UIImage *storeImage = [UIImage imageWithContentsOfFile:storeDocumentsDirectoryImagePath];
         store.storeImageFilename = storeDocumentsDirectoryImagePath;
-        cell.storeImageView.image = storeImage;
+//        cell.storeImageView.image = storeImage;
 //        [APBlob uploadFileWithName:storeDocumentsDirectoryImagePath
 //                mimeType:@"image/png" uploadProgressBlock:^(double progress) {
 //                
@@ -93,8 +93,8 @@
         
     } failureHandler:^(APError *error){}];
 
-    cell.storeAddressLabel.text = [store storeAddress];
-    cell.storePhoneLabel.text = [store storePhone];
+//    cell.storeAddressLabel.text = [store storeAddress];
+//    cell.storePhoneLabel.text = [store storePhone];
     // Configure the cell...
     
     return cell;

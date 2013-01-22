@@ -8,24 +8,44 @@
 
 
 #import "InitialSlidingViewController.h"
+#import "AppDelegate.h"
+#import "LoginViewController.h"
+
+#warning rename storyboardtemp
+@interface InitialSlidingViewController() {
+    BOOL _isAppacitiveSessionReceived;
+    UIStoryboard *_storyBoardTemp;
+}
+@end
 
 @implementation InitialSlidingViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    UIStoryboard *storyboard;
-    
-    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone) {
-        storyboard = [UIStoryboard storyboardWithName:@"iPhone" bundle:nil];
+    _storyBoardTemp = [UIStoryboard storyboardWithName:@"iPhone" bundle:nil];
+    self.topViewController = [_storyBoardTemp instantiateViewControllerWithIdentifier:@"NavigationTop"];
+}
+
+- (void) viewDidAppear:(BOOL)animated {
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(appacitiveSessionReceived) name:SessionReceivedNotification object:nil];
+}
+
+- (void) viewDidDisappear:(BOOL)animated {
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+
+- (void) appacitiveSessionReceived {
+    _isAppacitiveSessionReceived = YES;
+    if (FBSession.activeSession.state == FBSessionStateCreatedTokenLoaded) {
+        [ApplicationDelegate openSession];
+    } else {
+        __weak LoginViewController *loginViewController = (LoginViewController*) [_storyBoardTemp instantiateViewControllerWithIdentifier:@"Login"];
+        
+        loginViewController.loginWithFacebookSuccessful = ^() {
+            [loginViewController dismissViewControllerAnimated:YES completion:nil];
+        };
+        [self presentViewController:loginViewController animated:YES completion:nil];
     }
-    
-    /*
-     If the user is already logged in then directly go to DealsListViewController
-     */
-//    NSLog(@"SONIA'S CHECK ------in view did load of initial sliding view controller");
-   self.topViewController = [storyboard instantiateViewControllerWithIdentifier:@"NavigationTop"];
-    
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation {

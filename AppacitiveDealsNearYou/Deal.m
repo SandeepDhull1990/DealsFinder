@@ -9,9 +9,8 @@
 #import "Deal.h"
 
 @implementation Deal
-@synthesize dealTitle, dealImageUrl, dealImageFileName, dealStartDate, dealEndDate, dealDescription, dealLocation, dealAtttributes;
 
 - (NSString *)description {
-    return [NSString stringWithFormat:@"Deals fetched - Title: %@, ImageUrl: %@, Filename: %@, StartDate: %@, EndDate: %@, Description: %@, Location: %@, Attributes: %@",dealTitle, dealImageUrl, dealImageFileName, dealStartDate, dealEndDate, dealDescription, dealLocation, dealAtttributes];
+    return [NSString stringWithFormat:@"Deals fetched - Title: %@, ImageUrl: %@, Filename: %@, StartDate: %@, EndDate: %@, Description: %@, Location: %@", _dealTitle, _dealImageUrl, _dealImageFileName, _dealStartDate, _dealEndDate, _dealDescription, _dealLocation];
 }
 @end

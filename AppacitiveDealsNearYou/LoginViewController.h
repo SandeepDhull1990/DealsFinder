@@ -6,9 +6,10 @@
 //  Copyright (c) 2013 Appacitive. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+typedef void (^LoginWithFacebookSuccessful) ();
+typedef void (^LoginWithTwitterSuccessfull) ();
 
 @interface LoginViewController : UIViewController
-- (void)loginFailed;
-- (IBAction)loginWithFacebook:(id)sender;
+@property (nonatomic, copy) LoginWithFacebookSuccessful loginWithFacebookSuccessful;
+@property (nonatomic, copy) LoginWithTwitterSuccessfull loginWithTwitterSuccessful;
 @end

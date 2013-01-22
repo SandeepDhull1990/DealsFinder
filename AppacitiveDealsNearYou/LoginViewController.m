@@ -8,9 +8,6 @@
 
 #import "LoginViewController.h"
 #import "AppDelegate.h"
-#import <FacebookSDK/FacebookSDK.h>
-#import <Appacitive-iOS-SDK/APUser.h>
-#import <Appacitive-iOS-SDK/APError.h>
 #import "InitialSlidingViewController.h"
 
 @interface LoginViewController ()
@@ -19,54 +16,22 @@
 
 @implementation LoginViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
-
--(id)initWithCoder:(NSCoder *)aDecoder {
-    self = [super initWithCoder:aDecoder];
-    if (self) {
-//        NSLog(@"In the init with coder");
-    }
-    return self;
-}
-
-- (void)viewDidLoad
-{
+- (void) viewDidLoad {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(facebookSessionChangedNotification:) name:SCSessionStateChangedNotification object:nil];
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+#warning fill the error
+- (void) facebookSessionChangedNotification:(NSNotification*)notification {
+    FBSession *session = [[notification userInfo] objectForKey:@"session"];
+    if (session.state == FBSessionStateOpen && self.loginWithFacebookSuccessful != nil) {
+        self.loginWithFacebookSuccessful();
+    } else {
+        //through an error in the form of a on screen notification
+    }
 }
 
 - (IBAction)loginWithFacebook:(id)sender {
-//    AppDelegate* appDelegate = [UIApplication sharedApplication].delegate;
-//    [appDelegate openSession];
-    UIStoryboard *storyboard;
-    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone) {
-        storyboard = [UIStoryboard storyboardWithName:@"iPhone" bundle:nil];
-    }
-    self.initialSlidingViewController = [storyboard instantiateViewControllerWithIdentifier:@"InitialSliding"];
-    [self presentViewController:self.initialSlidingViewController animated:YES completion:^() {
-//        NSLog(@"succesfully navigated to initial Sliding view controller with facebook authentication-======");
-    }];
+    [ApplicationDelegate openSession];
 }
-
-- (void)loginFailed
-{
-    // User switched back to the app without authorizing. Stay here, but
-    // stop the spinner.
-    //    [self.spinner stopAnimating];
-    NSLog(@"LOG IN FAILED----------->");
-}
-
 @end
