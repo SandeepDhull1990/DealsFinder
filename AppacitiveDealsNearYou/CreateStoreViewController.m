@@ -97,9 +97,9 @@
 }
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
-//    if ([storeName isFirstResponder]) {
-//        return [storeName resignFirstResponder];
-//    }
-
+    if ([storeName isFirstResponder]) {
+        return [storeName resignFirstResponder];
+    }
+    return NO;
 }
 @end

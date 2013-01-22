@@ -1,0 +1,1 @@
+../../Appacitive-iOS-SDK/Appacitive-iOS-SDK/Categories/NSDictionary+APDictionary.h

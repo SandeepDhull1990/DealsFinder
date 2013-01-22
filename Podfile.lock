@@ -1,0 +1,20 @@
+
+DEPENDENCIES: 
+- Appacitive-iOS-SDK (= 1.0.5)
+- ECSlidingViewController (= 0.9.0)
+
+SPEC CHECKSUMS: 
+  MKNetworkKit: cf74341815a0211e550621d938aeadc2f3647abc
+  ECSlidingViewController: 46cb6a6cc72e359a19d2f232728be08685450d90
+  Appacitive-iOS-SDK: 4a47ac5b1581197afcbaa469e818a287ec164914
+  Reachability: 1c8584c5f26fa776695efef95caaa50402c94cfb
+
+PODS: 
+- Appacitive-iOS-SDK (1.0.5): 
+  - MKNetworkKit (= 0.85)
+- ECSlidingViewController (0.9.0)
+- MKNetworkKit (0.85): 
+  - Reachability (~> 3.0)
+- Reachability (3.1.0)
+
+COCOAPODS: 0.16.1

@@ -71,6 +71,9 @@
     } failureHandler:^(APError *error){}];
     
     cell.dealNameLabel.text = deal.dealTitle;
+    cell.dealDescriptionLabel.text = deal.dealDescription;
+    cell.dealStartDateLabel.text = [NSString stringWithFormat:@"%@",deal.dealStartDate];
+    cell.dealEndDateLabel.text = deal.dealEndDate;
     return cell;
 }
 

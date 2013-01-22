@@ -1,0 +1,1 @@
+../../Appacitive-iOS-SDK/Appacitive-iOS-SDK/Categories/NSString+APString.h
