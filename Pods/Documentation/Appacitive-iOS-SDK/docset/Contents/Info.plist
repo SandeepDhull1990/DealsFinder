@@ -5,9 +5,9 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleIdentifier</key>
-	<string>org.cocoapods.Appacitive-iOS-SDK-1.0.5</string>
+	<string>org.cocoapods.Appacitive-iOS-SDK-1.0.6</string>
 	<key>CFBundleName</key>
-	<string>Appacitive-iOS-SDK 1.0.5 Documentation</string>
+	<string>Appacitive-iOS-SDK 1.0.6 Documentation</string>
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
@@ -18,7 +18,7 @@
 	<string>iOS SDK for the Appacitive platform.</string>
 	
 	<key>DocSetFeedName</key>
-	<string>Appacitive-iOS-SDK 1.0.5 Documentation</string>
+	<string>Appacitive-iOS-SDK 1.0.6 Documentation</string>
 	
 	<key>DocSetMinimumXcodeVersion</key>
 	<string>3.0</string>

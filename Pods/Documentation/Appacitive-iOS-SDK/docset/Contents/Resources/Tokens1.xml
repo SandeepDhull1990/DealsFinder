@@ -187,5 +187,24 @@
 			<Anchor>//api/name/downloadFileFromRemoteUrl:toFile:downloadProgressBlock:successHandler:failureHandler:</Anchor>
 		</Token>
 		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/APBlob/downloadImageFromRemoteUrl:successHandler:</TokenIdentifier>
+			<Abstract type="html">Helper method to download a image from the remote server</Abstract>
+			<DeclaredIn>APBlob.h</DeclaredIn>			
+			
+			<Declaration>+ (void)downloadImageFromRemoteUrl:(NSString *)imageUrl successHandler:(APImageBlock)successBlock</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>imageUrl</Name>
+					<Abstract type="html">url of the image to download</Abstract>
+				</Parameter><Parameter>
+					<Name>successBlock</Name>
+					<Abstract type="html">block called when the image is downloaded. This block give a UIImage the and also give information on whether the image was downloaded or served from the image cache.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/downloadImageFromRemoteUrl:successHandler:</Anchor>
+		</Token>
+		
 	</File>
 </Tokens>

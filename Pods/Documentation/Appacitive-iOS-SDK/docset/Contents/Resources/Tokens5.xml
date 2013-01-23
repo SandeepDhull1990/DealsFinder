@@ -552,11 +552,11 @@ Data can be stored in key-value pairs in the properties and attributes fields.</
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/APObject/fetch</TokenIdentifier>
-			<Abstract type="html">fetchWithFailureHandler:</Abstract>
+			<Abstract type="html">fetchWithSuccessHandler:failureHandler:</Abstract>
 			<DeclaredIn>APObject.h</DeclaredIn>			
 			
 	<RelatedTokens>
-		<TokenIdentifier>//apple_ref/occ/instm/APObject/fetchWithFailureHandler:</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/instm/APObject/fetchWithSuccessHandler:failureHandler:</TokenIdentifier>
 		
 	</RelatedTokens>
 	
@@ -568,10 +568,26 @@ Data can be stored in key-value pairs in the properties and attributes fields.</
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/APObject/fetchWithFailureHandler:</TokenIdentifier>
+			<Abstract type="html">fetchWithSuccessHandler:failureHandler:</Abstract>
+			<DeclaredIn>APObject.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/APObject/fetchWithSuccessHandler:failureHandler:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)fetchWithFailureHandler:(APFailureBlock)failureBlock</Declaration>
+			
+			
+			<Anchor>//api/name/fetchWithFailureHandler:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/APObject/fetchWithSuccessHandler:failureHandler:</TokenIdentifier>
 			<Abstract type="html">Method used to fetch an APObject.</Abstract>
 			<DeclaredIn>APObject.h</DeclaredIn>			
 			
-			<Declaration>- (void)fetchWithFailureHandler:(APFailureBlock)failureBlock</Declaration>
+			<Declaration>- (void)fetchWithSuccessHandler:(APSuccessBlock)successBlock failureHandler:(APFailureBlock)failureBlock</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>failureBlock</Name>
@@ -579,7 +595,7 @@ Data can be stored in key-value pairs in the properties and attributes fields.</
 				</Parameter>
 			</Parameters>
 			
-			<Anchor>//api/name/fetchWithFailureHandler:</Anchor>
+			<Anchor>//api/name/fetchWithSuccessHandler:failureHandler:</Anchor>
 		</Token>
 		
 		<Token>
