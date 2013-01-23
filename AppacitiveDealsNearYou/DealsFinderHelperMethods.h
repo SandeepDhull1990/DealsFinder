@@ -8,5 +8,5 @@
 
 
 @interface DealsFinderHelperMethods : NSObject
-+ (NSDate *) deserializeJsonDateString: (NSString *)jsonDateString;
++ (NSString *) deserializeJsonDateStringToHumanReadableForm: (NSString *)jsonDateString;
 @end

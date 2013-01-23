@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/APQuery.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/APQuery</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>APQuery.h</DeclaredIn>
+			
+			<NodeRef refid="6"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/APQuery/queryStringForEqualCondition:propertyValue:</TokenIdentifier>
+			<Abstract type="html">Helper method to generate an equal to query string.</Abstract>
+			<DeclaredIn>APQuery.h</DeclaredIn>			
+			
+			<Declaration>+ (NSString *)queryStringForEqualCondition:(NSString *)propertyName propertyValue:(NSString *)propertyValue</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>propertyName</Name>
+					<Abstract type="html">name of the property to search for.</Abstract>
+				</Parameter><Parameter>
+					<Name>propertyValue</Name>
+					<Abstract type="html">the value of the property to equate to.
+
+Example query would be +[APQuery queryStringForEqualCondition:@&quot;hotelName&quot; propertyValue:@&quot;Le Meridian&quot;]
+This would return &quot;*hotelName == &apos;Le Meridian&apos;&quot; which is the format Appacitive understands.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/queryStringForEqualCondition:propertyValue:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/APQuery/queryStringForEqualCondition:date:</TokenIdentifier>
+			<Abstract type="html">Helper method to generate an equal to query string.</Abstract>
+			<DeclaredIn>APQuery.h</DeclaredIn>			
+			
+			<Declaration>+ (NSString *)queryStringForEqualCondition:(NSString *)propertyName date:(NSDate *)date</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>propertyName</Name>
+					<Abstract type="html">name of the property to search for</Abstract>
+				</Parameter><Parameter>
+					<Name>date</Name>
+					<Abstract type="html">the date to equate to.
+
+Example query would be +[APQuery queryStringForEqualCondition:@&quot;checkinDate&quot; date:someDate]
+This would return &quot;*checkinDate == date(someDate.description)&apos;&quot; which is the format Appacitive understands</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/queryStringForEqualCondition:date:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/APQuery/queryStringForLikeCondition:propertyValue:</TokenIdentifier>
+			<Abstract type="html">Helper method to generate a query string for like condition.</Abstract>
+			<DeclaredIn>APQuery.h</DeclaredIn>			
+			
+			<Declaration>+ (NSString *)queryStringForLikeCondition:(NSString *)propertyName propertyValue:(NSString *)propertyValue</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>propertyName</Name>
+					<Abstract type="html">name of the property to search for</Abstract>
+				</Parameter><Parameter>
+					<Name>propertyValue</Name>
+					<Abstract type="html">the value of the property.
+
+Example query would be +[APQuery queryStringForLikeCondition:@&quot;hotelName&quot; propertyValue:@&quot;Le Meridian&quot;]
+This would return &quot;*hotelName like &apos;Le Meridian&apos;&quot; which is the format Appacitive understands</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/queryStringForLikeCondition:propertyValue:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/APQuery/queryStringForGreaterThanCondition:propertyValue:</TokenIdentifier>
+			<Abstract type="html">Helper method to generate a greater than query string.</Abstract>
+			<DeclaredIn>APQuery.h</DeclaredIn>			
+			
+			<Declaration>+ (NSString *)queryStringForGreaterThanCondition:(NSString *)propertyName propertyValue:(NSString *)propertyValue</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>propertyName</Name>
+					<Abstract type="html">name of the property to search for</Abstract>
+				</Parameter><Parameter>
+					<Name>propertyValue</Name>
+					<Abstract type="html">value that the property should be greater than.
+
+Example query would be +[APQuery queryStringForGreaterThanCondition:@&quot;cost&quot; propertyValue:[NSString stringWithFormat@&quot;%d&quot;, 123]]
+This would return &quot;*cost &gt; &apos;123&apos;&quot; which is the format Appacitive understands</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/queryStringForGreaterThanCondition:propertyValue:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/APQuery/queryStringForLessThanCondition:propertyValue:</TokenIdentifier>
+			<Abstract type="html">Helper method to generate a less than query string.</Abstract>
+			<DeclaredIn>APQuery.h</DeclaredIn>			
+			
+			<Declaration>+ (NSString *)queryStringForLessThanCondition:(NSString *)propertyName propertyValue:(NSString *)propertyValue</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>propertyName</Name>
+					<Abstract type="html">name of the property to search for</Abstract>
+				</Parameter><Parameter>
+					<Name>propertyValue</Name>
+					<Abstract type="html">the value the property should be less than.
+
+Example query would be +[APQuery queryStringForLessThanCondition:@&quot;cost&quot; propertyValue:[NSString stringWithFormat@&quot;%d&quot;, 123]]
+This would return &quot;*cost &lt; &apos;123&apos;&quot; which is the format Appacitive understands</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/queryStringForLessThanCondition:propertyValue:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/APQuery/queryStringForPageSize:</TokenIdentifier>
+			<Abstract type="html">Helper method to generate a query string for page size.</Abstract>
+			<DeclaredIn>APQuery.h</DeclaredIn>			
+			
+			<Declaration>+ (NSString *)queryStringForPageSize:(NSUInteger)pageSize</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>pageSize</Name>
+					<Abstract type="html">an integer value for the page size.
+
+Example query would be [APQuery queryStringForPageSize:2]
+This would return &quot;psize=(2)&quot; which is the format Appacitive understands</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/queryStringForPageSize:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/APQuery/queryStringForPageNumber:</TokenIdentifier>
+			<Abstract type="html">Helper method to generate a query string for page number.</Abstract>
+			<DeclaredIn>APQuery.h</DeclaredIn>			
+			
+			<Declaration>+ (NSString *)queryStringForPageNumber:(NSUInteger)pageNumber</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>pageNumber</Name>
+					<Abstract type="html">the page number to get
+
+Example query would be [APQuery queryStringForPageNumber:123]
+This would return &quot;pnum=(123)&quot; which is the format Appacitive understands</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/queryStringForPageNumber:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/APQuery/queryStringForGeoCodeProperty:location:distance:raduis:</TokenIdentifier>
+			<Abstract type="html">Helper method to generate a query string for geocode search.</Abstract>
+			<DeclaredIn>APQuery.h</DeclaredIn>			
+			
+			<Declaration>+ (NSString *)queryStringForGeoCodeProperty:(NSString *)propertyName location:(CLLocation *)location distance:(DistanceMetric)distanceMetric raduis:(NSNumber *)radius</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>propertyName</Name>
+					<Abstract type="html">name of the property to search for</Abstract>
+				</Parameter><Parameter>
+					<Name>location</Name>
+					<Abstract type="html">the geocode to search for</Abstract>
+				</Parameter><Parameter>
+					<Name>distanceMetric</Name>
+					<Abstract type="html">the distance either in km or miles</Abstract>
+				</Parameter><Parameter>
+					<Name>radius</Name>
+					<Abstract type="html">the radios around the location to look for
+
+Example query would be +[APQuery queryStringForGeoCodeProperty:@&quot;location&quot; location:{123, 123} distance:kilometers raduis:12]
+This would return &quot;*location within_circle 123,123,12&quot; which is the format Appacitive understands.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/queryStringForGeoCodeProperty:location:distance:raduis:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/APQuery/queryStringForPolygonSearch:withPolygonCoordinates:</TokenIdentifier>
+			<Abstract type="html">Helper method to generate a query string for polygon search.</Abstract>
+			<DeclaredIn>APQuery.h</DeclaredIn>			
+			
+			<Declaration>+ (NSString *)queryStringForPolygonSearch:(NSString *)propertyName withPolygonCoordinates:(NSArray *)coordinates</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>propertyName</Name>
+					<Abstract type="html">name of the property to search for</Abstract>
+				</Parameter><Parameter>
+					<Name>coordinates</Name>
+					<Abstract type="html">an array of CLLocation coordinates. The array needs to have a minimum of three coordinates.
+
+Example query would be +[APQuery queryStringForPolygonSearch:@&quot;location&quot; withPolygonCoordinates:coordinates]
+This would return &quot;*location within_polygon {lat,long} | {lat,long} | {lat,long}&quot; which is the format Appacitive understands.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/queryStringForPolygonSearch:withPolygonCoordinates:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/APQuery/queryStringForSearchWithOneOrMoreTags:</TokenIdentifier>
+			<Abstract type="html">Helper method to generate a query string for search with tags.</Abstract>
+			<DeclaredIn>APQuery.h</DeclaredIn>			
+			
+			<Declaration>+ (NSString *)queryStringForSearchWithOneOrMoreTags:(NSArray *)tags</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>tags</Name>
+					<Abstract type="html">an array of tags to search for.
+
+Example query would be [APQuery queryStringForSearchWithOneOrMoreTags:array]
+This would return &quot;taggedwithoneormore (&apos;tag1,tag2&apos;)&quot; where tag1 and tag2 are in array, which is the format Appacitive understands</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/queryStringForSearchWithOneOrMoreTags:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/APQuery/queryStringForSearchWithAllTags:</TokenIdentifier>
+			<Abstract type="html">Helper method to generate a query string for search with tags.</Abstract>
+			<DeclaredIn>APQuery.h</DeclaredIn>			
+			
+			<Declaration>+ (NSString *)queryStringForSearchWithAllTags:(NSArray *)tags</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>tags</Name>
+					<Abstract type="html">an array of tags to search for.
+
+Example query would be [APQuery queryStringForSearchWithAllTags:array]
+This would return &quot;taggedwithall (&apos;tag1,tag2&apos;)&quot; where tag1 and tag2 are in array, which is the format Appacitive understands</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/queryStringForSearchWithAllTags:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/APQuery/queryStringForSearchWithFreeText:</TokenIdentifier>
+			<Abstract type="html">Helper method to generate a query string to search for free text.</Abstract>
+			<DeclaredIn>APQuery.h</DeclaredIn>			
+			
+			<Declaration>+ (NSString *)queryStringForSearchWithFreeText:(NSArray *)freeTextTokens</Declaration>
+			
+			
+			<Anchor>//api/name/queryStringForSearchWithFreeText:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

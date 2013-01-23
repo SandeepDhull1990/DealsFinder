@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		0ED499E6EAE44436BA77AF37 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4838FBC8DEB14352AD1ABF26 /* libPods.a */; };
+		610EA7DA16AEEB9C002046A0 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 610EA7D916AEEB9C002046A0 /* SWRevealViewController.m */; };
+		610EA7DE16AEEC57002046A0 /* reveal-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 610EA7DC16AEEC57002046A0 /* reveal-icon.png */; };
+		610EA7DF16AEEC57002046A0 /* reveal-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 610EA7DD16AEEC57002046A0 /* reveal-icon@2x.png */; };
+		610EA7E116AF01C5002046A0 /* photo_not_available_large.png in Resources */ = {isa = PBXBuildFile; fileRef = 610EA7E016AF01C5002046A0 /* photo_not_available_large.png */; };
 		6132CD4A16AE6C00009FEC58 /* back_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 6132CD4016AE6C00009FEC58 /* back_btn.png */; };
 		6132CD4B16AE6C00009FEC58 /* car1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 6132CD4116AE6C00009FEC58 /* car1.jpeg */; };
 		6132CD4C16AE6C00009FEC58 /* car2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 6132CD4216AE6C00009FEC58 /* car2.jpeg */; };
@@ -22,9 +26,7 @@
 		6132CD5E16AEA1A3009FEC58 /* photo_not_available.png in Resources */ = {isa = PBXBuildFile; fileRef = 6132CD5D16AEA1A3009FEC58 /* photo_not_available.png */; };
 		9720E38216A6664700967FE0 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9720E38116A6664700967FE0 /* CoreLocation.framework */; };
 		973E5D0316A40DC600E1BDD8 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 973E5D0216A40DC600E1BDD8 /* LoginViewController.m */; };
-		9760C6B516A4132E00D62309 /* InitialSlidingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9760C6B416A4132E00D62309 /* InitialSlidingViewController.m */; };
-		9760C6BC16A4186000D62309 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9760C6BB16A4186000D62309 /* MenuViewController.m */; };
-		9760C6BF16A41A0000D62309 /* NavigationTopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9760C6BE16A41A0000D62309 /* NavigationTopViewController.m */; };
+		9760C6B516A4132E00D62309 /* SlidingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9760C6B416A4132E00D62309 /* SlidingViewController.m */; };
 		9760C6C216A41A1D00D62309 /* DealsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9760C6C116A41A1D00D62309 /* DealsListViewController.m */; };
 		9767E2BA16A94A320018B0E1 /* StoreCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9767E2B916A94A320018B0E1 /* StoreCell.m */; };
 		9767E2C416A963740018B0E1 /* NavigationTopCreateStoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9767E2C316A963740018B0E1 /* NavigationTopCreateStoreViewController.m */; };
@@ -39,7 +41,6 @@
 		97CB545C16A7EEF200E752B0 /* DealCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 97CB545B16A7EEF200E752B0 /* DealCell.m */; };
 		97CF711416A9228A0042AA65 /* Deal.m in Sources */ = {isa = PBXBuildFile; fileRef = 97CF711316A9228A0042AA65 /* Deal.m */; };
 		97CF711716A93C5D0042AA65 /* InitialSlidingStoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97CF711616A93C5C0042AA65 /* InitialSlidingStoreViewController.m */; };
-		97CF711A16A93CEF0042AA65 /* NavigationTopStoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97CF711916A93CEF0042AA65 /* NavigationTopStoreViewController.m */; };
 		97D1A69816A3D810000010B4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97D1A69716A3D810000010B4 /* UIKit.framework */; };
 		97D1A69A16A3D810000010B4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97D1A69916A3D810000010B4 /* Foundation.framework */; };
 		97D1A69C16A3D810000010B4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97D1A69B16A3D810000010B4 /* CoreGraphics.framework */; };
@@ -71,6 +72,11 @@
 /* Begin PBXFileReference section */
 		1724B85E3A6C4E4BBDA9B79B /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		4838FBC8DEB14352AD1ABF26 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		610EA7D816AEEB9C002046A0 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		610EA7D916AEEB9C002046A0 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		610EA7DC16AEEC57002046A0 /* reveal-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "reveal-icon.png"; sourceTree = "<group>"; };
+		610EA7DD16AEEC57002046A0 /* reveal-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "reveal-icon@2x.png"; sourceTree = "<group>"; };
+		610EA7E016AF01C5002046A0 /* photo_not_available_large.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = photo_not_available_large.png; sourceTree = "<group>"; };
 		6132CD4016AE6C00009FEC58 /* back_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back_btn.png; sourceTree = "<group>"; };
 		6132CD4116AE6C00009FEC58 /* car1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = car1.jpeg; sourceTree = "<group>"; };
 		6132CD4216AE6C00009FEC58 /* car2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = car2.jpeg; sourceTree = "<group>"; };
@@ -87,12 +93,8 @@
 		9720E38116A6664700967FE0 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		973E5D0116A40DC600E1BDD8 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		973E5D0216A40DC600E1BDD8 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
-		9760C6B316A4132E00D62309 /* InitialSlidingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InitialSlidingViewController.h; sourceTree = "<group>"; };
-		9760C6B416A4132E00D62309 /* InitialSlidingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InitialSlidingViewController.m; sourceTree = "<group>"; };
-		9760C6BA16A4186000D62309 /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
-		9760C6BB16A4186000D62309 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
-		9760C6BD16A41A0000D62309 /* NavigationTopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationTopViewController.h; sourceTree = "<group>"; };
-		9760C6BE16A41A0000D62309 /* NavigationTopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationTopViewController.m; sourceTree = "<group>"; };
+		9760C6B316A4132E00D62309 /* SlidingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SlidingViewController.h; sourceTree = "<group>"; };
+		9760C6B416A4132E00D62309 /* SlidingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SlidingViewController.m; sourceTree = "<group>"; };
 		9760C6C016A41A1D00D62309 /* DealsListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DealsListViewController.h; sourceTree = "<group>"; };
 		9760C6C116A41A1D00D62309 /* DealsListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DealsListViewController.m; sourceTree = "<group>"; };
 		9767E2B816A94A320018B0E1 /* StoreCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoreCell.h; sourceTree = "<group>"; };
@@ -118,8 +120,6 @@
 		97CF711316A9228A0042AA65 /* Deal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Deal.m; sourceTree = "<group>"; };
 		97CF711516A93C5C0042AA65 /* InitialSlidingStoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InitialSlidingStoreViewController.h; sourceTree = "<group>"; };
 		97CF711616A93C5C0042AA65 /* InitialSlidingStoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InitialSlidingStoreViewController.m; sourceTree = "<group>"; };
-		97CF711816A93CEF0042AA65 /* NavigationTopStoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationTopStoreViewController.h; sourceTree = "<group>"; };
-		97CF711916A93CEF0042AA65 /* NavigationTopStoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationTopStoreViewController.m; sourceTree = "<group>"; };
 		97D1A69316A3D810000010B4 /* AppacitiveDealsNearYou.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppacitiveDealsNearYou.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		97D1A69716A3D810000010B4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		97D1A69916A3D810000010B4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -180,6 +180,9 @@
 		6132CD3E16AE6B25009FEC58 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				610EA7E016AF01C5002046A0 /* photo_not_available_large.png */,
+				610EA7DC16AEEC57002046A0 /* reveal-icon.png */,
+				610EA7DD16AEEC57002046A0 /* reveal-icon@2x.png */,
 				6132CD5D16AEA1A3009FEC58 /* photo_not_available.png */,
 				6132CD4016AE6C00009FEC58 /* back_btn.png */,
 				6132CD4116AE6C00009FEC58 /* car1.jpeg */,
@@ -199,22 +202,16 @@
 		9760C6B116A4131700D62309 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				97D1A6A616A3D810000010B4 /* AppDelegate.h */,
-				97D1A6A716A3D810000010B4 /* AppDelegate.m */,
+				610EA7D816AEEB9C002046A0 /* SWRevealViewController.h */,
+				610EA7D916AEEB9C002046A0 /* SWRevealViewController.m */,
+				9760C6B316A4132E00D62309 /* SlidingViewController.h */,
+				9760C6B416A4132E00D62309 /* SlidingViewController.m */,
 				973E5D0116A40DC600E1BDD8 /* LoginViewController.h */,
 				973E5D0216A40DC600E1BDD8 /* LoginViewController.m */,
-				9760C6B316A4132E00D62309 /* InitialSlidingViewController.h */,
-				9760C6B416A4132E00D62309 /* InitialSlidingViewController.m */,
-				9760C6BD16A41A0000D62309 /* NavigationTopViewController.h */,
-				9760C6BE16A41A0000D62309 /* NavigationTopViewController.m */,
 				9760C6C016A41A1D00D62309 /* DealsListViewController.h */,
 				9760C6C116A41A1D00D62309 /* DealsListViewController.m */,
-				9760C6BA16A4186000D62309 /* MenuViewController.h */,
-				9760C6BB16A4186000D62309 /* MenuViewController.m */,
 				97D406F616AD0DF000F3740C /* DealDetailViewController.h */,
 				97D406F716AD0DF000F3740C /* DealDetailViewController.m */,
-				97CF711816A93CEF0042AA65 /* NavigationTopStoreViewController.h */,
-				97CF711916A93CEF0042AA65 /* NavigationTopStoreViewController.m */,
 				97E675C116A477A600B69F36 /* StoreListViewController.h */,
 				97E675C216A477A600B69F36 /* StoreListViewController.m */,
 				9767E2C216A963740018B0E1 /* NavigationTopCreateStoreViewController.h */,
@@ -301,6 +298,8 @@
 		97D1A69D16A3D810000010B4 /* AppacitiveDealsNearYou */ = {
 			isa = PBXGroup;
 			children = (
+				97D1A6A616A3D810000010B4 /* AppDelegate.h */,
+				97D1A6A716A3D810000010B4 /* AppDelegate.m */,
 				97CF711016A922740042AA65 /* Classes */,
 				97CB545916A7EEC500E752B0 /* CustomCells */,
 				97D1A69E16A3D810000010B4 /* Supporting Files */,
@@ -423,6 +422,9 @@
 				6132CD5216AE6C00009FEC58 /* iPhone.storyboard in Resources */,
 				6132CD5316AE6C00009FEC58 /* nav_menu_icon.png in Resources */,
 				6132CD5E16AEA1A3009FEC58 /* photo_not_available.png in Resources */,
+				610EA7DE16AEEC57002046A0 /* reveal-icon.png in Resources */,
+				610EA7DF16AEEC57002046A0 /* reveal-icon@2x.png in Resources */,
+				610EA7E116AF01C5002046A0 /* photo_not_available_large.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -474,15 +476,12 @@
 				97D1A6A416A3D810000010B4 /* main.m in Sources */,
 				97D1A6A816A3D810000010B4 /* AppDelegate.m in Sources */,
 				973E5D0316A40DC600E1BDD8 /* LoginViewController.m in Sources */,
-				9760C6B516A4132E00D62309 /* InitialSlidingViewController.m in Sources */,
-				9760C6BC16A4186000D62309 /* MenuViewController.m in Sources */,
-				9760C6BF16A41A0000D62309 /* NavigationTopViewController.m in Sources */,
+				9760C6B516A4132E00D62309 /* SlidingViewController.m in Sources */,
 				9760C6C216A41A1D00D62309 /* DealsListViewController.m in Sources */,
 				97E675C316A477A600B69F36 /* StoreListViewController.m in Sources */,
 				97CB545C16A7EEF200E752B0 /* DealCell.m in Sources */,
 				97CF711416A9228A0042AA65 /* Deal.m in Sources */,
 				97CF711716A93C5D0042AA65 /* InitialSlidingStoreViewController.m in Sources */,
-				97CF711A16A93CEF0042AA65 /* NavigationTopStoreViewController.m in Sources */,
 				9767E2BA16A94A320018B0E1 /* StoreCell.m in Sources */,
 				9767E2C416A963740018B0E1 /* NavigationTopCreateStoreViewController.m in Sources */,
 				9767E2C716A963DF0018B0E1 /* MenuFindDealsViewController.m in Sources */,
@@ -493,6 +492,7 @@
 				97D4070216AD5D6100F3740C /* CreateStoreViewController.m in Sources */,
 				97C9474916AD9A7C00B707EC /* StoreImage.m in Sources */,
 				6132CD5616AE91BD009FEC58 /* DealsFinderHelperMethods.m in Sources */,
+				610EA7DA16AEEB9C002046A0 /* SWRevealViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

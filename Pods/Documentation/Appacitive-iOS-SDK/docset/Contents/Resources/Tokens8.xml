@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/APUserDetails.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/APUserDetails</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>APUserDetails.h</DeclaredIn>
+			
+			<NodeRef refid="8"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/APUserDetails/setUsername:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>APUserDetails.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) NSString *username</Declaration>
+			
+			
+			<Anchor>//api/name/username</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/APUserDetails/username</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>APUserDetails.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) NSString *username</Declaration>
+			
+			
+			<Anchor>//api/name/username</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/APUserDetails/setPassword:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>APUserDetails.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) NSString *password</Declaration>
+			
+			
+			<Anchor>//api/name/password</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/APUserDetails/password</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>APUserDetails.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) NSString *password</Declaration>
+			
+			
+			<Anchor>//api/name/password</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/APUserDetails/setBirthDate:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>APUserDetails.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) NSString *birthDate</Declaration>
+			
+			
+			<Anchor>//api/name/birthDate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/APUserDetails/birthDate</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>APUserDetails.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) NSString *birthDate</Declaration>
+			
+			
+			<Anchor>//api/name/birthDate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/APUserDetails/setFirstName:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>APUserDetails.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) NSString *firstName</Declaration>
+			
+			
+			<Anchor>//api/name/firstName</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/APUserDetails/firstName</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>APUserDetails.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) NSString *firstName</Declaration>
+			
+			
+			<Anchor>//api/name/firstName</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/APUserDetails/setLastName:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>APUserDetails.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) NSString *lastName</Declaration>
+			
+			
+			<Anchor>//api/name/lastName</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/APUserDetails/lastName</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>APUserDetails.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) NSString *lastName</Declaration>
+			
+			
+			<Anchor>//api/name/lastName</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/APUserDetails/setEmail:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>APUserDetails.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) NSString *email</Declaration>
+			
+			
+			<Anchor>//api/name/email</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/APUserDetails/email</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>APUserDetails.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) NSString *email</Declaration>
+			
+			
+			<Anchor>//api/name/email</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/APUserDetails/setSecretQuestion:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>APUserDetails.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) NSString *secretQuestion</Declaration>
+			
+			
+			<Anchor>//api/name/secretQuestion</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/APUserDetails/secretQuestion</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>APUserDetails.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) NSString *secretQuestion</Declaration>
+			
+			
+			<Anchor>//api/name/secretQuestion</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/APUserDetails/setSecretAnswer:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>APUserDetails.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) NSString *secretAnswer</Declaration>
+			
+			
+			<Anchor>//api/name/secretAnswer</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/APUserDetails/secretAnswer</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>APUserDetails.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) NSString *secretAnswer</Declaration>
+			
+			
+			<Anchor>//api/name/secretAnswer</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/APUserDetails/setPhone:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>APUserDetails.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) NSString *phone</Declaration>
+			
+			
+			<Anchor>//api/name/phone</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/APUserDetails/phone</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>APUserDetails.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) NSString *phone</Declaration>
+			
+			
+			<Anchor>//api/name/phone</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/APUserDetails/createParameters</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>APUserDetails.h</DeclaredIn>			
+			
+			<Declaration>- (NSMutableDictionary *)createParameters</Declaration>
+			
+			
+			<Anchor>//api/name/createParameters</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

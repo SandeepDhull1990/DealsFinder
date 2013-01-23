@@ -7,9 +7,6 @@
 //
 
 #import "StoreListViewController.h"
-#import <ECSlidingViewController/ECSlidingViewController.h>
-#import <Appacitive-iOS-SDK/APObject.h>
-#import <Appacitive-iOS-SDK/APBlob.h>
 #import "Store.h"
 #import "StoreCell.h"
 
@@ -105,13 +102,13 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
     UIViewController *newStoreViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"NavigationTopCreateDeal"];
-    
-    [self.slidingViewController anchorTopViewOffScreenTo:ECRight animations:nil onComplete:^{
-        CGRect frame = self.slidingViewController.topViewController.view.frame;
-        self.slidingViewController.topViewController = newStoreViewController;
-        self.slidingViewController.topViewController.view.frame = frame;
-        [self.slidingViewController resetTopView];
-    }];
+//    
+//    [self.slidingViewController anchorTopViewOffScreenTo:ECRight animations:nil onComplete:^{
+//        CGRect frame = self.slidingViewController.topViewController.view.frame;
+//        self.slidingViewController.topViewController = newStoreViewController;
+//        self.slidingViewController.topViewController.view.frame = frame;
+//        [self.slidingViewController resetTopView];
+//    }];
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
@@ -155,15 +152,15 @@
 - (void)createNewStore:(id)sender {
     UIViewController *newStoreViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"NavigationTopCreateStore"];
     
-    [self.slidingViewController anchorTopViewOffScreenTo:ECRight animations:nil onComplete:^{
-        CGRect frame = self.slidingViewController.topViewController.view.frame;
-        self.slidingViewController.topViewController = newStoreViewController;
-        self.slidingViewController.topViewController.view.frame = frame;
-        [self.slidingViewController resetTopView];
-    }];
+//    [self.slidingViewController anchorTopViewOffScreenTo:ECRight animations:nil onComplete:^{
+//        CGRect frame = self.slidingViewController.topViewController.view.frame;
+//        self.slidingViewController.topViewController = newStoreViewController;
+//        self.slidingViewController.topViewController.view.frame = frame;
+//        [self.slidingViewController resetTopView];
+//    }];
 }
 - (IBAction)revealPublishOptions:(id)sender {
-    [self.slidingViewController anchorTopViewTo:ECRight];
+//    [self.slidingViewController anchorTopViewTo:ECRight];
 }
 
 #pragma mark - fetch remote data

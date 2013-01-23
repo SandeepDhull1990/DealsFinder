@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/NSString+APString.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/NSString(APString)</TokenIdentifier>
+			<Abstract type="html">A library of helpful additions to the NSString class to simplify
+common tasks within Appacitive-iOS-SDK</Abstract>
+			<DeclaredIn>NSString+APString.h</DeclaredIn>
+			
+			<NodeRef refid="11"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSString(APString)/stringByAppendingQueryParameters:</TokenIdentifier>
+			<Abstract type="html">Returns a resource path from a dictionary of query parameters URL encoded and appended
+This is a convenience method for constructing a new resource path that includes a query. For example,
+when given a resourcePath of /contacts and a dictionary of parameters containing foo=bar and color=red,
+will return /contacts?foo=bar&amp;amp;amp;color=red</Abstract>
+			<DeclaredIn>NSString+APString.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)stringByAppendingQueryParameters:(NSDictionary *)queryParameters</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>queryParameters</Name>
+					<Abstract type="html">A dictionary of query parameters to be URL encoded and appended to the resource path</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A new resource path with the query parameters appended</Abstract></ReturnValue>
+			<Anchor>//api/name/stringByAppendingQueryParameters:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSString(APString)/appendQueryParams:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSString+APString.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)appendQueryParams:(NSDictionary *)queryParams</Declaration>
+			
+			
+			<Anchor>//api/name/appendQueryParams:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSString(APString)/queryParameters</TokenIdentifier>
+			<Abstract type="html">Returns a dictionary of parameter keys and values using UTF-8 encoding given a URL-style query string
+on the receiving object. For example, when given the string /contacts?foo=bar&amp;amp;amp;color=red,
+this will return a dictionary of parameters containing foo=bar and color=red, excluding the path &quot;/contacts?&quot;</Abstract>
+			<DeclaredIn>NSString+APString.h</DeclaredIn>			
+			
+			<Declaration>- (NSDictionary *)queryParameters</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>receiver</Name>
+					<Abstract type="html">A string in the form of @&quot;/object/?sortBy=name&quot;, or @&quot;/object/?sortBy=name&amp;amp;amp;color=red&quot;</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A new dictionary of query parameters, with keys like &apos;sortBy&apos; and values like &apos;name&apos;.</Abstract></ReturnValue>
+			<Anchor>//api/name/queryParameters</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSString(APString)/queryParametersUsingEncoding:</TokenIdentifier>
+			<Abstract type="html">Returns a dictionary of parameter keys and values given a URL-style query string
+on the receiving object. For example, when given the string /contacts?foo=bar&amp;amp;amp;color=red,
+this will return a dictionary of parameters containing foo=bar and color=red, excludes the path &quot;/contacts?&quot;</Abstract>
+			<DeclaredIn>NSString+APString.h</DeclaredIn>			
+			
+			<Declaration>- (NSDictionary *)queryParametersUsingEncoding:(NSStringEncoding)encoding</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>receiver</Name>
+					<Abstract type="html">A string in the form of @&quot;/object/?sortBy=name&quot;, or @&quot;/object/?sortBy=name&amp;amp;amp;color=red&quot;</Abstract>
+				</Parameter><Parameter>
+					<Name>encoding</Name>
+					<Abstract type="html">The encoding for to use while parsing the query string.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A new dictionary of query parameters, with keys like &apos;sortBy&apos; and values like &apos;name&apos;.</Abstract></ReturnValue>
+			<Anchor>//api/name/queryParametersUsingEncoding:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSString(APString)/queryParametersUsingArrays:encoding:</TokenIdentifier>
+			<Abstract type="html">Returns a dictionary of parameter keys and values arrays (if requested) given a URL-style query string
+on the receiving object. For example, when given the string /contacts?foo=bar&amp;amp;amp;color=red,
+this will return a dictionary of parameters containing foo=[bar] and color=[red], excludes the path &quot;/contacts?&quot;</Abstract>
+			<DeclaredIn>NSString+APString.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intfm/NSString(APString)/queryParametersUsingEncoding:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (NSDictionary *)queryParametersUsingArrays:(BOOL)shouldUseArrays encoding:(NSStringEncoding)encoding</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>shouldUseArrays</Name>
+					<Abstract type="html">If NO, it yields the same results as queryParametersUsingEncoding:, otherwise it creates value arrays instead of value strings.</Abstract>
+				</Parameter><Parameter>
+					<Name>encoding</Name>
+					<Abstract type="html">The encoding for to use while parsing the query string.</Abstract>
+				</Parameter><Parameter>
+					<Name>receiver</Name>
+					<Abstract type="html">A string in the form of @&quot;/object?sortBy=name&quot;, or @&quot;/object?sortBy=name&amp;amp;amp;color=red&quot;</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A new dictionary of query parameters, with keys like &apos;sortBy&apos; and value arrays (if requested) like [&apos;name&apos;].</Abstract></ReturnValue>
+			<Anchor>//api/name/queryParametersUsingArrays:encoding:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSString(APString)/stringByAddingURLEncoding</TokenIdentifier>
+			<Abstract type="html">Returns a URL encoded representation of self.</Abstract>
+			<DeclaredIn>NSString+APString.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)stringByAddingURLEncoding</Declaration>
+			
+			
+			<Anchor>//api/name/stringByAddingURLEncoding</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

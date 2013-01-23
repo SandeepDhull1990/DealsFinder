@@ -7,7 +7,6 @@
 //
 
 #import "NavigationTopCreateDealViewController.h"
-#import <ECSlidingViewController/ECSlidingViewController.h>
 #import "MenuFindDealsViewController.h"
 
 @interface NavigationTopCreateDealViewController ()
@@ -18,10 +17,5 @@
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-    
-    if (![self.slidingViewController.underLeftViewController isKindOfClass:[MenuFindDealsViewController class]]) {
-        self.slidingViewController.underLeftViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"MenuFindDeals"];
-    }
-    [self.view addGestureRecognizer:self.slidingViewController.panGesture];
 }
 @end

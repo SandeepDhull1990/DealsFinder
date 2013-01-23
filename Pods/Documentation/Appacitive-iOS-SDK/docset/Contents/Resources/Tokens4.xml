@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/APHelperMethods.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/APHelperMethods</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>APHelperMethods.h</DeclaredIn>
+			
+			<NodeRef refid="4"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/APHelperMethods/checkForErrorStatus:</TokenIdentifier>
+			<Abstract type="html">Helper method used to check for any errors.</Abstract>
+			<DeclaredIn>APHelperMethods.h</DeclaredIn>			
+			
+			<Declaration>+ (APError *)checkForErrorStatus:(id)response</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>response</Name>
+					<Abstract type="html">Response received from the server.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/checkForErrorStatus:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/APHelperMethods/arrayOfPropertiesFromJSONResponse:</TokenIdentifier>
+			<Abstract type="html">Helper method to parse the properties from a json response</Abstract>
+			<DeclaredIn>APHelperMethods.h</DeclaredIn>			
+			
+			<Declaration>+ (NSArray *)arrayOfPropertiesFromJSONResponse:(id)response</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>response</Name>
+					<Abstract type="html">Response received from the server.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An array of properties</Abstract></ReturnValue>
+			<Anchor>//api/name/arrayOfPropertiesFromJSONResponse:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/APHelperMethods/dictionaryOfPropertiesFromJSONResponse:</TokenIdentifier>
+			<Abstract type="html">Helper method to parse the properties from a json response</Abstract>
+			<DeclaredIn>APHelperMethods.h</DeclaredIn>			
+			
+			<Declaration>+ (NSDictionary *)dictionaryOfPropertiesFromJSONResponse:(id)response</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>response</Name>
+					<Abstract type="html">Response received from the server.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A dictionary of properties</Abstract></ReturnValue>
+			<Anchor>//api/name/dictionaryOfPropertiesFromJSONResponse:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/APHelperMethods/addHeadersToMKNetworkOperation:</TokenIdentifier>
+			<Abstract type="html">Helper method to add the session id and environment to the request headers.</Abstract>
+			<DeclaredIn>APHelperMethods.h</DeclaredIn>			
+			
+			<Declaration>+ (void)addHeadersToMKNetworkOperation:(MKNetworkOperation *)operation</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>operation</Name>
+					<Abstract type="html">The operation to add the headers to.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addHeadersToMKNetworkOperation:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

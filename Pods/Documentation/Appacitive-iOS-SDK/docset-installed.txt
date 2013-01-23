@@ -1,0 +1,4 @@
+Documentation set was installed to Xcode!
+
+Path: /Users/kauserali/Library/Developer/Shared/Documentation/DocSets/org.cocoapods.Appacitive-iOS-SDK-1.0.5.docset
+Time: 2013-01-23 03:17:19 +0000

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/APError.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/APError</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>APError.h</DeclaredIn>
+			
+			<NodeRef refid="3"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/APError/setReferenceId:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>APError.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) NSString *referenceId</Declaration>
+			
+			
+			<Anchor>//api/name/referenceId</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/APError/referenceId</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>APError.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) NSString *referenceId</Declaration>
+			
+			
+			<Anchor>//api/name/referenceId</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/APError/setVersion:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>APError.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) NSString *version</Declaration>
+			
+			
+			<Anchor>//api/name/version</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/APError/version</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>APError.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) NSString *version</Declaration>
+			
+			
+			<Anchor>//api/name/version</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

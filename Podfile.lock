@@ -1,23 +1,20 @@
 
+SPEC CHECKSUMS: 
+  Reachability: 1c8584c5f26fa776695efef95caaa50402c94cfb
+  MKNetworkKit: cf74341815a0211e550621d938aeadc2f3647abc
+  Facebook-iOS-SDK: 5fc068ebfd8c8c9b0fad476bc36dbbf1fffeebc8
+  Appacitive-iOS-SDK: 4a47ac5b1581197afcbaa469e818a287ec164914
+
 COCOAPODS: 0.16.0
+
+DEPENDENCIES: 
+- Appacitive-iOS-SDK (= 1.0.5)
+- Facebook-iOS-SDK (~> 3.1.1)
 
 PODS: 
 - Appacitive-iOS-SDK (1.0.5): 
   - MKNetworkKit (= 0.85)
-- ECSlidingViewController (0.9.0)
 - Facebook-iOS-SDK (3.1.1)
 - MKNetworkKit (0.85): 
   - Reachability (~> 3.0)
 - Reachability (3.1.0)
-
-SPEC CHECKSUMS: 
-  Appacitive-iOS-SDK: 4a47ac5b1581197afcbaa469e818a287ec164914
-  Reachability: 1c8584c5f26fa776695efef95caaa50402c94cfb
-  Facebook-iOS-SDK: 5fc068ebfd8c8c9b0fad476bc36dbbf1fffeebc8
-  ECSlidingViewController: 46cb6a6cc72e359a19d2f232728be08685450d90
-  MKNetworkKit: cf74341815a0211e550621d938aeadc2f3647abc
-
-DEPENDENCIES: 
-- Appacitive-iOS-SDK (= 1.0.5)
-- ECSlidingViewController (= 0.9.0)
-- Facebook-iOS-SDK (~> 3.1.1)

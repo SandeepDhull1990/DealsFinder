@@ -6,8 +6,6 @@
 //  Copyright (c) 2013 Appacitive. All rights reserved.
 //
 
-#import "NavigationTopViewController.h"
-
 #define ApplicationDelegate ((AppDelegate *)[UIApplication sharedApplication].delegate)
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>

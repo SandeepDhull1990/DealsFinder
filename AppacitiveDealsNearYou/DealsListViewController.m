@@ -7,10 +7,8 @@
 //
 
 #import "DealsListViewController.h"
-#import "MenuViewController.h"
 #import "DealCell.h"
 #import "Deal.h"
-#import "NavigationTopViewController.h"
 #import "DealDetailViewController.h"
 #import "DealsFinderHelperMethods.h"
 
@@ -18,13 +16,10 @@
 #define FETCH_DEALS_IMAGES 2
 
 @interface DealsListViewController ()
-
-- (IBAction)revealPublishOptions:(id)sender;
-- (IBAction)logoutButton:(id)sender;
-
 @property (weak, nonatomic) IBOutlet UITableView *dealTableView;
-
 @property (strong, nonatomic) NSMutableArray *deals;
+
+- (IBAction)showMenu:(id)sender;
 @end
 
 @implementation DealsListViewController
@@ -41,13 +36,8 @@
     [self fetchDeals];
 }
 
-- (IBAction)revealPublishOptions:(id)sender {
-    [self.slidingViewController anchorTopViewTo:ECRight];
-}
-
-- (IBAction)logoutButton:(id)sender {
-    [FBSession.activeSession closeAndClearTokenInformation];
-    [self dismissViewControllerAnimated:YES completion:nil];
+- (IBAction)showMenu:(id)sender {
+    [[self revealViewController] revealToggleAnimated:YES];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -59,8 +49,8 @@
     
     cell.dealNameLabel.text = deal.dealTitle;
     cell.dealDescriptionLabel.text = deal.dealDescription;
-    cell.dealStartDateLabel.text = [[DealsFinderHelperMethods deserializeJsonDateString:deal.dealStartDate] description];
-    cell.dealEndDateLabel.text = [[DealsFinderHelperMethods deserializeJsonDateString:deal.dealEndDate] description];
+    cell.dealStartDateLabel.text = [[DealsFinderHelperMethods deserializeJsonDateStringToHumanReadableForm:deal.dealStartDate] description];
+    cell.dealEndDateLabel.text = [[DealsFinderHelperMethods deserializeJsonDateStringToHumanReadableForm:deal.dealEndDate] description];
     
     return cell;
 }
@@ -69,16 +59,14 @@
     return [_deals count];
 }
 
-//- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-//    if ([segue.identifier isEqualToString:@"ShowDealDetail"]) {
-//        DealDetailViewController *dealDetail = [segue destinationViewController];
-//        NSIndexPath *path = [_dealTableView indexPathForSelectedRow];
-//        Deal *selectedDeal = [deals objectAtIndex:path.row];
-//        [dealDetail setSelectedDeal:selectedDeal];
-//    }
-//}
-
-#warning implement failure with proper UI callbacks
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:@"ShowDealDetail"]) {
+        DealDetailViewController *dealDetail = [segue destinationViewController];
+        NSIndexPath *path = [_dealTableView indexPathForSelectedRow];
+        Deal *selectedDeal = [_deals objectAtIndex:path.row];
+        [dealDetail setDeal:selectedDeal];
+    }
+}
 
 -(void) fetchDeals {
     [APObject searchObjectsWithSchemaName:@"deal"
@@ -91,6 +79,7 @@
                       NSDictionary *dealDictionary = obj;
                       
                       Deal *deal = [[Deal alloc]init];
+                      deal.objectId = [dealDictionary objectForKey:@"__id"];
                       deal.dealTitle = [dealDictionary objectForKey:@"title"];
                       deal.dealImageUrl = [dealDictionary objectForKey:@"photo"];
                       deal.dealStartDate = [dealDictionary objectForKey:@"startdate"];

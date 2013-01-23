@@ -7,7 +7,6 @@
 //
 
 #import "MenuFindDealsViewController.h"
-#import <ECSlidingViewController/ECSlidingViewController.h>
 
 @interface MenuFindDealsViewController () {
     UIView *_footerView;
@@ -26,8 +25,8 @@
 {
     [super viewDidLoad];
     //NSLog(@"in view did load");
-    [self.slidingViewController setAnchorRightRevealAmount:280.f];
-    self.slidingViewController.underLeftWidthLayout = ECFullWidth;
+//    [self.slidingViewController setAnchorRightRevealAmount:280.f];
+//    self.slidingViewController.underLeftWidthLayout = ECFullWidth;
 }
 
 #pragma mark TableView Data source methods
@@ -53,12 +52,12 @@
     
     UIViewController *newStoreViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"NavigationTop"];
     
-    [self.slidingViewController anchorTopViewOffScreenTo:ECRight animations:nil onComplete:^{
-        CGRect frame = self.slidingViewController.topViewController.view.frame;
-        self.slidingViewController.topViewController = newStoreViewController;
-        self.slidingViewController.topViewController.view.frame = frame;
-        [self.slidingViewController resetTopView];
-    }];
+//    [self.slidingViewController anchorTopViewOffScreenTo:ECRight animations:nil onComplete:^{
+//        CGRect frame = self.slidingViewController.topViewController.view.frame;
+//        self.slidingViewController.topViewController = newStoreViewController;
+//        self.slidingViewController.topViewController.view.frame = frame;
+//        [self.slidingViewController resetTopView];
+//    }];
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
@@ -102,23 +101,23 @@
 - (void)logout:(id) sender {
     UIViewController *newStoreViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"Login"];
     
-    [self.slidingViewController anchorTopViewOffScreenTo:ECRight animations:nil onComplete:^{
-        CGRect frame = self.slidingViewController.topViewController.view.frame;
-        self.slidingViewController.topViewController = newStoreViewController;
-        self.slidingViewController.topViewController.view.frame = frame;
-        [self.slidingViewController resetTopView];
-    }];
+//    [self.slidingViewController anchorTopViewOffScreenTo:ECRight animations:nil onComplete:^{
+//        CGRect frame = self.slidingViewController.topViewController.view.frame;
+//        self.slidingViewController.topViewController = newStoreViewController;
+//        self.slidingViewController.topViewController.view.frame = frame;
+//        [self.slidingViewController resetTopView];
+//    }];
 
 }
 - (IBAction)backToDealsList:(id)sender {
     UIViewController *newStoreViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"Login"];
     
-    [self.slidingViewController anchorTopViewOffScreenTo:ECRight animations:nil onComplete:^{
-        CGRect frame = self.slidingViewController.topViewController.view.frame;
-        self.slidingViewController.topViewController = newStoreViewController;
-        self.slidingViewController.topViewController.view.frame = frame;
-        [self.slidingViewController resetTopView];
-    }];
+//    [self.slidingViewController anchorTopViewOffScreenTo:ECRight animations:nil onComplete:^{
+//        CGRect frame = self.slidingViewController.topViewController.view.frame;
+//        self.slidingViewController.topViewController = newStoreViewController;
+//        self.slidingViewController.topViewController.view.frame = frame;
+//        [self.slidingViewController resetTopView];
+//    }];
     
 }
 @end

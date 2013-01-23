@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/APUser.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/APUser</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>APUser.h</DeclaredIn>
+			
+			<NodeRef refid="7"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/APUser/setUserToken:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>APUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong, readonly) NSString *userToken</Declaration>
+			
+			
+			<Anchor>//api/name/userToken</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/APUser/userToken</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>APUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong, readonly) NSString *userToken</Declaration>
+			
+			
+			<Anchor>//api/name/userToken</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/APUser/currentUser</TokenIdentifier>
+			<Abstract type="html">Returns the current authenticated user.</Abstract>
+			<DeclaredIn>APUser.h</DeclaredIn>			
+			
+			<Declaration>+ (APUser *)currentUser</Declaration>
+			
+			<ReturnValue><Abstract type="html">APUser or nil</Abstract></ReturnValue>
+			<Anchor>//api/name/currentUser</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/APUser/setCurrentUser:</TokenIdentifier>
+			<Abstract type="html">Helper method to set the current user.</Abstract>
+			<DeclaredIn>APUser.h</DeclaredIn>			
+			
+			<Declaration>+ (void)setCurrentUser:(APUser *)user</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>user</Name>
+					<Abstract type="html">The new current user</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setCurrentUser:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/APUser/authenticateUserWithUserName:password:successHandler:</TokenIdentifier>
+			<Abstract type="html">authenticateUserWithUserName:password:successHandler:failureHandler</Abstract>
+			<DeclaredIn>APUser.h</DeclaredIn>			
+			
+			<Declaration>+ (void)authenticateUserWithUserName:(NSString *)userName password:(NSString *)password successHandler:(APSuccessBlock)successBlock</Declaration>
+			
+			
+			<Anchor>//api/name/authenticateUserWithUserName:password:successHandler:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/APUser/authenticateUserWithUserName:password:successHandler:failureHandler:</TokenIdentifier>
+			<Abstract type="html">Method to authenticate a user</Abstract>
+			<DeclaredIn>APUser.h</DeclaredIn>			
+			
+			<Declaration>+ (void)authenticateUserWithUserName:(NSString *)userName password:(NSString *)password successHandler:(APSuccessBlock)successBlock failureHandler:(APFailureBlock)failureBlock</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>userName</Name>
+					<Abstract type="html">The username of the user to authenticate.</Abstract>
+				</Parameter><Parameter>
+					<Name>password</Name>
+					<Abstract type="html">The password of the user to authenticate.</Abstract>
+				</Parameter><Parameter>
+					<Name>successBlock</Name>
+					<Abstract type="html">Block invoked when authentication is successful.</Abstract>
+				</Parameter><Parameter>
+					<Name>failureBlock</Name>
+					<Abstract type="html">Block invoked when authentication is unsuccessful.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/authenticateUserWithUserName:password:successHandler:failureHandler:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/APUser/authenticateUserWithFacebook:successHandler:</TokenIdentifier>
+			<Abstract type="html">authenticateUserWithFacebook:successHandler:failureHandler:</Abstract>
+			<DeclaredIn>APUser.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/clm/APUser/authenticateUserWithFacebook:successHandler:failureHandler:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>+ (void)authenticateUserWithFacebook:(NSString *)accessToken successHandler:(APSuccessBlock)successBlock</Declaration>
+			
+			
+			<Anchor>//api/name/authenticateUserWithFacebook:successHandler:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/APUser/authenticateUserWithFacebook:successHandler:failureHandler:</TokenIdentifier>
+			<Abstract type="html">Method to authenticate a user with facebook.</Abstract>
+			<DeclaredIn>APUser.h</DeclaredIn>			
+			
+			<Declaration>+ (void)authenticateUserWithFacebook:(NSString *)accessToken successHandler:(APSuccessBlock)successBlock failureHandler:(APFailureBlock)failureBlock</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>accessToken</Name>
+					<Abstract type="html">The access token retrieved after a succesful facebook login.</Abstract>
+				</Parameter><Parameter>
+					<Name>successBlock</Name>
+					<Abstract type="html">Block invoked when authentication with facebook is successful.</Abstract>
+				</Parameter><Parameter>
+					<Name>failureBlock</Name>
+					<Abstract type="html">Block invoked when authentication with facebook is unsuccessful.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/authenticateUserWithFacebook:successHandler:failureHandler:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/APUser/authenticateUserWithTwitter:oauthSecret:successHandler:</TokenIdentifier>
+			<Abstract type="html">authenticateUserWithTwitter:oauthSecret:successHandler:failureHandler:</Abstract>
+			<DeclaredIn>APUser.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/clm/APUser/authenticateUserWithTwitter:oauthSecret:successHandler:failureHandler:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>+ (void)authenticateUserWithTwitter:(NSString *)oauthToken oauthSecret:(NSString *)oauthSecret successHandler:(APSuccessBlock)successBlock</Declaration>
+			
+			
+			<Anchor>//api/name/authenticateUserWithTwitter:oauthSecret:successHandler:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/APUser/authenticateUserWithTwitter:oauthSecret:successHandler:failureHandler:</TokenIdentifier>
+			<Abstract type="html">Method to authenticate a user with Twitter.</Abstract>
+			<DeclaredIn>APUser.h</DeclaredIn>			
+			
+			<Declaration>+ (void)authenticateUserWithTwitter:(NSString *)oauthToken oauthSecret:(NSString *)oauthSecret successHandler:(APSuccessBlock)successBlock failureHandler:(APFailureBlock)failureBlock</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>oauthToken</Name>
+					<Abstract type="html">The oauth token retrieved after twitter login.</Abstract>
+				</Parameter><Parameter>
+					<Name>oauthSecret</Name>
+					<Abstract type="html">The oauth secret.</Abstract>
+				</Parameter><Parameter>
+					<Name>successBlock</Name>
+					<Abstract type="html">Block invoked when login with twitter is successful.</Abstract>
+				</Parameter><Parameter>
+					<Name>failureBlock</Name>
+					<Abstract type="html">Block invoked when login with twitter is unsuccessful.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/authenticateUserWithTwitter:oauthSecret:successHandler:failureHandler:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/APUser/authenticateUserWithTwitter:oauthSecret:consumerKey:consumerSecret:successHandler:</TokenIdentifier>
+			<Abstract type="html">authenticateUserWithTwitter:oauthSecret:consumerKey:consumerSecret:successHandler:failureHandler:</Abstract>
+			<DeclaredIn>APUser.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/clm/APUser/authenticateUserWithTwitter:oauthSecret:consumerKey:consumerSecret:successHandler:failureHandler:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>+ (void)authenticateUserWithTwitter:(NSString *)oauthToken oauthSecret:(NSString *)oauthSecret consumerKey:(NSString *)consumerKey consumerSecret:(NSString *)consumerSecret successHandler:(APSuccessBlock)successBlock</Declaration>
+			
+			
+			<Anchor>//api/name/authenticateUserWithTwitter:oauthSecret:consumerKey:consumerSecret:successHandler:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/APUser/authenticateUserWithTwitter:oauthSecret:consumerKey:consumerSecret:successHandler:failureHandler:</TokenIdentifier>
+			<Abstract type="html">Method to authenticate a user with Twitter.</Abstract>
+			<DeclaredIn>APUser.h</DeclaredIn>			
+			
+			<Declaration>+ (void)authenticateUserWithTwitter:(NSString *)oauthToken oauthSecret:(NSString *)oauthSecret consumerKey:(NSString *)consumerKey consumerSecret:(NSString *)consumerSecret successHandler:(APSuccessBlock)successBlock failureHandler:(APFailureBlock)failureBlock</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>oauthToken</Name>
+					<Abstract type="html">The oauth token retrieved after twitter login.</Abstract>
+				</Parameter><Parameter>
+					<Name>oauthSecret</Name>
+					<Abstract type="html">The oauth secret.</Abstract>
+				</Parameter><Parameter>
+					<Name>consumerKey</Name>
+					<Abstract type="html">The consumer key of the application created on twitter.</Abstract>
+				</Parameter><Parameter>
+					<Name>consumerSecret</Name>
+					<Abstract type="html">The consumer secret of the application created on twitter.</Abstract>
+				</Parameter><Parameter>
+					<Name>successBlock</Name>
+					<Abstract type="html">Block invoked when authentication with twitter is successful.</Abstract>
+				</Parameter><Parameter>
+					<Name>failureBlock</Name>
+					<Abstract type="html">Block invoked when authentication with twitter is unsuccessful.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/authenticateUserWithTwitter:oauthSecret:consumerKey:consumerSecret:successHandler:failureHandler:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/APUser/createUserWithDetails:successHandler:</TokenIdentifier>
+			<Abstract type="html">createUserWithDetails:successHandler:failuderHandler:</Abstract>
+			<DeclaredIn>APUser.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/clm/APUser/createUserWithDetails:successHandler:failuderHandler:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>+ (void)createUserWithDetails:(APUserDetails *)userDetails successHandler:(APUserSuccessBlock)successBlock</Declaration>
+			
+			
+			<Anchor>//api/name/createUserWithDetails:successHandler:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/APUser/createUserWithDetails:successHandler:failuderHandler:</TokenIdentifier>
+			<Abstract type="html">Method to create a new user</Abstract>
+			<DeclaredIn>APUser.h</DeclaredIn>			
+			
+			<Declaration>+ (void)createUserWithDetails:(APUserDetails *)userDetails successHandler:(APUserSuccessBlock)successBlock failuderHandler:(APFailureBlock)failureBlock</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>userDetails</Name>
+					<Abstract type="html">The details of the new user.</Abstract>
+				</Parameter><Parameter>
+					<Name>successBlock</Name>
+					<Abstract type="html">Block invoked when the create request is successful.</Abstract>
+				</Parameter><Parameter>
+					<Name>failureBlock</Name>
+					<Abstract type="html">Block invoked when the create request is unsuccessful.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/createUserWithDetails:successHandler:failuderHandler:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

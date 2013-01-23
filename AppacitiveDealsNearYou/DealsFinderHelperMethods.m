@@ -10,14 +10,16 @@
 
 @implementation DealsFinderHelperMethods
 
-+ (NSDate *) deserializeJsonDateString: (NSString *)jsonDateString {
++ (NSString *) deserializeJsonDateStringToHumanReadableForm: (NSString *)jsonDateString {
     if (jsonDateString == nil && jsonDateString.length == 0) {
         return nil;
     }
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
     [dateFormatter setDateFormat:@"yyyy-MM-dd'T'HH:mm:ss.SSSSSSSS"];
     NSDate *date = [dateFormatter dateFromString:jsonDateString];
-    return date;
+    
+    [dateFormatter setDateFormat:@"dd-MM-yy"];
+    return [dateFormatter stringFromDate:date];
 }
 
 @end

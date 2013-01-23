@@ -1,0 +1,763 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/APObject.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/APObject</TokenIdentifier>
+			<Abstract type="html">An APObject is a basic unit to store information in.
+It represents an instance of a schema.
+Data can be stored in key-value pairs in the properties and attributes fields.</Abstract>
+			<DeclaredIn>APObject.h</DeclaredIn>
+			
+			<NodeRef refid="5"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/APObject/setCreatedBy:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>APObject.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) NSString *createdBy</Declaration>
+			
+			
+			<Anchor>//api/name/createdBy</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/APObject/createdBy</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>APObject.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) NSString *createdBy</Declaration>
+			
+			
+			<Anchor>//api/name/createdBy</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/APObject/setObjectId:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>APObject.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *objectId</Declaration>
+			
+			
+			<Anchor>//api/name/objectId</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/APObject/objectId</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>APObject.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *objectId</Declaration>
+			
+			
+			<Anchor>//api/name/objectId</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/APObject/setLastModifiedBy:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>APObject.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong, readonly) NSString *lastModifiedBy</Declaration>
+			
+			
+			<Anchor>//api/name/lastModifiedBy</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/APObject/lastModifiedBy</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>APObject.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong, readonly) NSString *lastModifiedBy</Declaration>
+			
+			
+			<Anchor>//api/name/lastModifiedBy</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/APObject/setUtcDateCreated:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>APObject.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong, readonly) NSDate *utcDateCreated</Declaration>
+			
+			
+			<Anchor>//api/name/utcDateCreated</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/APObject/utcDateCreated</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>APObject.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong, readonly) NSDate *utcDateCreated</Declaration>
+			
+			
+			<Anchor>//api/name/utcDateCreated</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/APObject/setUtcLastUpdatedDate:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>APObject.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong, readonly) NSDate *utcLastUpdatedDate</Declaration>
+			
+			
+			<Anchor>//api/name/utcLastUpdatedDate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/APObject/utcLastUpdatedDate</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>APObject.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong, readonly) NSDate *utcLastUpdatedDate</Declaration>
+			
+			
+			<Anchor>//api/name/utcLastUpdatedDate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/APObject/setRevision:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>APObject.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong, readonly) NSNumber *revision</Declaration>
+			
+			
+			<Anchor>//api/name/revision</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/APObject/revision</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>APObject.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong, readonly) NSNumber *revision</Declaration>
+			
+			
+			<Anchor>//api/name/revision</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/APObject/setProperties:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>APObject.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong, readonly) NSMutableArray *properties</Declaration>
+			
+			
+			<Anchor>//api/name/properties</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/APObject/properties</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>APObject.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong, readonly) NSMutableArray *properties</Declaration>
+			
+			
+			<Anchor>//api/name/properties</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/APObject/setAttributes:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>APObject.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong, readonly) NSMutableArray *attributes</Declaration>
+			
+			
+			<Anchor>//api/name/attributes</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/APObject/attributes</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>APObject.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong, readonly) NSMutableArray *attributes</Declaration>
+			
+			
+			<Anchor>//api/name/attributes</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/APObject/setSchemaId:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>APObject.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *schemaId</Declaration>
+			
+			
+			<Anchor>//api/name/schemaId</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/APObject/schemaId</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>APObject.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *schemaId</Declaration>
+			
+			
+			<Anchor>//api/name/schemaId</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/APObject/setSchemaType:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>APObject.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) NSString *schemaType</Declaration>
+			
+			
+			<Anchor>//api/name/schemaType</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/APObject/schemaType</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>APObject.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) NSString *schemaType</Declaration>
+			
+			
+			<Anchor>//api/name/schemaType</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/APObject/setTags:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>APObject.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) NSArray *tags</Declaration>
+			
+			
+			<Anchor>//api/name/tags</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/APObject/tags</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>APObject.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) NSArray *tags</Declaration>
+			
+			
+			<Anchor>//api/name/tags</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/APObject/objectWithSchemaName:</TokenIdentifier>
+			<Abstract type="html">Initialize and return an autoreleased APObject for the provided schema name.</Abstract>
+			<DeclaredIn>APObject.h</DeclaredIn>			
+			
+			<Declaration>+ (id)objectWithSchemaName:(NSString *)schemaName</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>schemaName</Name>
+					<Abstract type="html">The schema this article represents.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/objectWithSchemaName:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/APObject/initWithSchemaName:</TokenIdentifier>
+			<Abstract type="html">Initialize and return an autoreleased APObject for the provided schema name.</Abstract>
+			<DeclaredIn>APObject.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithSchemaName:(NSString *)schemaName</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>schemaName</Name>
+					<Abstract type="html">The schema this article represents.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/initWithSchemaName:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/APObject/searchAllObjectsWithSchemaName:successHandler:</TokenIdentifier>
+			<Abstract type="html">searchAllObjectsWithSchemaName:successHandler:failureHandler:</Abstract>
+			<DeclaredIn>APObject.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/clm/APObject/searchAllObjectsWithSchemaName:successHandler:failureHandler:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>+ (void)searchAllObjectsWithSchemaName:(NSString *)schemaName successHandler:(APResultSuccessBlock)successBlock</Declaration>
+			
+			
+			<Anchor>//api/name/searchAllObjectsWithSchemaName:successHandler:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/APObject/searchAllObjectsWithSchemaName:successHandler:failureHandler:</TokenIdentifier>
+			<Abstract type="html">Searches for all APObjects of a particular schema.</Abstract>
+			<DeclaredIn>APObject.h</DeclaredIn>			
+			
+			<Declaration>+ (void)searchAllObjectsWithSchemaName:(NSString *)schemaName successHandler:(APResultSuccessBlock)successBlock failureHandler:(APFailureBlock)failureBlock</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>schemaName</Name>
+					<Abstract type="html">The schema that the objects should belong to.</Abstract>
+				</Parameter><Parameter>
+					<Name>successBlock</Name>
+					<Abstract type="html">Block invoked when the search call is successful.</Abstract>
+				</Parameter><Parameter>
+					<Name>failureBlock</Name>
+					<Abstract type="html">Block invoked when search call fails.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/searchAllObjectsWithSchemaName:successHandler:failureHandler:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/APObject/searchObjectsWithSchemaName:withQueryString:successHandler:</TokenIdentifier>
+			<Abstract type="html">searchObjectsWithSchemaName:withQueryString:successHandler:failureHandler:</Abstract>
+			<DeclaredIn>APObject.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/clm/APObject/searchObjectsWithSchemaName:withQueryString:successHandler:failureHandler:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>+ (void)searchObjectsWithSchemaName:(NSString *)schemaName withQueryString:(NSString *)queryString successHandler:(APResultSuccessBlock)successBlock</Declaration>
+			
+			
+			<Anchor>//api/name/searchObjectsWithSchemaName:withQueryString:successHandler:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/APObject/searchObjectsWithSchemaName:withQueryString:successHandler:failureHandler:</TokenIdentifier>
+			<Abstract type="html">Searches for APObjects and filters the results according to the query string.</Abstract>
+			<DeclaredIn>APObject.h</DeclaredIn>			
+			
+			<Declaration>+ (void)searchObjectsWithSchemaName:(NSString *)schemaName withQueryString:(NSString *)queryString successHandler:(APResultSuccessBlock)successBlock failureHandler:(APFailureBlock)failureBlock</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>schemaName</Name>
+					<Abstract type="html">The schema of the objects you want to search.</Abstract>
+				</Parameter><Parameter>
+					<Name>queryString</Name>
+					<Abstract type="html">SQL kind of query to search for specific objects. For more info http://appacitive.com</Abstract>
+				</Parameter><Parameter>
+					<Name>successBlock</Name>
+					<Abstract type="html">Block invoked when the search call is successful.</Abstract>
+				</Parameter><Parameter>
+					<Name>failureBlock</Name>
+					<Abstract type="html">Block invoked when the search call fails.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/searchObjectsWithSchemaName:withQueryString:successHandler:failureHandler:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/APObject/deleteObjectsWithIds:schemaName:failureHandler:</TokenIdentifier>
+			<Abstract type="html">deleteObjectsWithIds:schemaName:successHandler:failureHandler:</Abstract>
+			<DeclaredIn>APObject.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/clm/APObject/deleteObjectsWithIds:schemaName:successHandler:failureHandler:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>+ (void)deleteObjectsWithIds:(NSArray *)objectIds schemaName:(NSString *)schemaName failureHandler:(APFailureBlock)failureBlock</Declaration>
+			
+			
+			<Anchor>//api/name/deleteObjectsWithIds:schemaName:failureHandler:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/APObject/deleteObjectsWithIds:schemaName:successHandler:failureHandler:</TokenIdentifier>
+			<Abstract type="html">Deletes multiple APObjects.</Abstract>
+			<DeclaredIn>APObject.h</DeclaredIn>			
+			
+			<Declaration>+ (void)deleteObjectsWithIds:(NSArray *)objectIds schemaName:(NSString *)schemaName successHandler:(APSuccessBlock)successBlock failureHandler:(APFailureBlock)failureBlock</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>objectIds</Name>
+					<Abstract type="html">The ids of the objects to delete.</Abstract>
+				</Parameter><Parameter>
+					<Name>schemaName</Name>
+					<Abstract type="html">The schema that the objects belong to.</Abstract>
+				</Parameter><Parameter>
+					<Name>successBlock</Name>
+					<Abstract type="html">Block invoked when the multi delete operation succeeds.</Abstract>
+				</Parameter><Parameter>
+					<Name>failureBlock</Name>
+					<Abstract type="html">Block invoked when the multi delete operation fails.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/deleteObjectsWithIds:schemaName:successHandler:failureHandler:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/APObject/deleteObject</TokenIdentifier>
+			<Abstract type="html">deleteObjectWithSuccessHandler:failureHandler:</Abstract>
+			<DeclaredIn>APObject.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/APObject/deleteObjectWithSuccessHandler:failureHandler:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)deleteObject</Declaration>
+			
+			
+			<Anchor>//api/name/deleteObject</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/APObject/deleteObjectWithFailureHandler:</TokenIdentifier>
+			<Abstract type="html">deleteObjectWithSuccessHandler:failureHandler:</Abstract>
+			<DeclaredIn>APObject.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/APObject/deleteObjectWithSuccessHandler:failureHandler:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)deleteObjectWithFailureHandler:(APFailureBlock)failureBlock</Declaration>
+			
+			
+			<Anchor>//api/name/deleteObjectWithFailureHandler:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/APObject/deleteObjectWithSuccessHandler:failureHandler:</TokenIdentifier>
+			<Abstract type="html">Deletes and APObject.</Abstract>
+			<DeclaredIn>APObject.h</DeclaredIn>			
+			
+			<Declaration>- (void)deleteObjectWithSuccessHandler:(APSuccessBlock)successBlock failureHandler:(APFailureBlock)failureBlock</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>successBlock</Name>
+					<Abstract type="html">Block invoked when delete operation is successful</Abstract>
+				</Parameter><Parameter>
+					<Name>failureBlock</Name>
+					<Abstract type="html">Block invoked when delete operation fails.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/deleteObjectWithSuccessHandler:failureHandler:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/APObject/deleteObjectWithConnectingConnections</TokenIdentifier>
+			<Abstract type="html">deleteObjectWithConnectingConnectionsSuccessHandler:failureHandler:</Abstract>
+			<DeclaredIn>APObject.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/APObject/deleteObjectWithConnectingConnectionsSuccessHandler:failureHandler:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)deleteObjectWithConnectingConnections</Declaration>
+			
+			
+			<Anchor>//api/name/deleteObjectWithConnectingConnections</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/APObject/deleteObjectWithConnectingConnections:</TokenIdentifier>
+			<Abstract type="html">deleteObjectWithConnectingConnectionsSuccessHandler:failureHandler:</Abstract>
+			<DeclaredIn>APObject.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/APObject/deleteObjectWithConnectingConnectionsSuccessHandler:failureHandler:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)deleteObjectWithConnectingConnections:(APFailureBlock)failureBlock</Declaration>
+			
+			
+			<Anchor>//api/name/deleteObjectWithConnectingConnections:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/APObject/deleteObjectWithConnectingConnectionsSuccessHandler:failureHandler:</TokenIdentifier>
+			<Abstract type="html">Deletes an APObject along with any connections it has.</Abstract>
+			<DeclaredIn>APObject.h</DeclaredIn>			
+			
+			<Declaration>- (void)deleteObjectWithConnectingConnectionsSuccessHandler:(APSuccessBlock)successBlock failureHandler:(APFailureBlock)failureBlock</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>successBlock</Name>
+					<Abstract type="html">Block invoked when delete operation is successful</Abstract>
+				</Parameter><Parameter>
+					<Name>failureBlock</Name>
+					<Abstract type="html">Block invoked when delete operation is unsuccessful</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/deleteObjectWithConnectingConnectionsSuccessHandler:failureHandler:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/APObject/fetchObjectWithObjectId:schemaName:successHandler:failureHandler:</TokenIdentifier>
+			<Abstract type="html">fetchObjectsWithObjectIds:schemaName:successHandler:failureHandler:</Abstract>
+			<DeclaredIn>APObject.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/clm/APObject/fetchObjectsWithObjectIds:schemaName:successHandler:failureHandler:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>+ (void)fetchObjectWithObjectId:(NSNumber *)objectId schemaName:(NSString *)schemaName successHandler:(APResultSuccessBlock)successBlock failureHandler:(APFailureBlock)failureBlock</Declaration>
+			
+			
+			<Anchor>//api/name/fetchObjectWithObjectId:schemaName:successHandler:failureHandler:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/APObject/fetchObjectsWithObjectIds:schemaName:successHandler:failureHandler:</TokenIdentifier>
+			<Abstract type="html">Retrieves multiple APObjects of a particular schema.</Abstract>
+			<DeclaredIn>APObject.h</DeclaredIn>			
+			
+			<Declaration>+ (void)fetchObjectsWithObjectIds:(NSArray *)objectIds schemaName:(NSString *)schemaName successHandler:(APResultSuccessBlock)successBlock failureHandler:(APFailureBlock)failureBlock</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>objectIds</Name>
+					<Abstract type="html">The ids of the objects.</Abstract>
+				</Parameter><Parameter>
+					<Name>schemaName</Name>
+					<Abstract type="html">The schema name the objects belong to.</Abstract>
+				</Parameter><Parameter>
+					<Name>successBlock</Name>
+					<Abstract type="html">Block invoked when the retrieve operation succeeds.</Abstract>
+				</Parameter><Parameter>
+					<Name>failureBlock</Name>
+					<Abstract type="html">Block invoked when the failure operation succeeds.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/fetchObjectsWithObjectIds:schemaName:successHandler:failureHandler:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/APObject/fetch</TokenIdentifier>
+			<Abstract type="html">fetchWithFailureHandler:</Abstract>
+			<DeclaredIn>APObject.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/APObject/fetchWithFailureHandler:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)fetch</Declaration>
+			
+			
+			<Anchor>//api/name/fetch</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/APObject/fetchWithFailureHandler:</TokenIdentifier>
+			<Abstract type="html">Method used to fetch an APObject.</Abstract>
+			<DeclaredIn>APObject.h</DeclaredIn>			
+			
+			<Declaration>- (void)fetchWithFailureHandler:(APFailureBlock)failureBlock</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>failureBlock</Name>
+					<Abstract type="html">Block invoked when the fetch operation fails.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/fetchWithFailureHandler:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/APObject/addPropertyWithKey:value:</TokenIdentifier>
+			<Abstract type="html">Method used to add a property to the APObject.</Abstract>
+			<DeclaredIn>APObject.h</DeclaredIn>			
+			
+			<Declaration>- (void)addPropertyWithKey:(NSString *)keyName value:(id)object</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>keyName</Name>
+					<Abstract type="html">key of the data item to be stored.</Abstract>
+				</Parameter><Parameter>
+					<Name>object</Name>
+					<Abstract type="html">Corresponding value to the key.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addPropertyWithKey:value:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/APObject/addAttributeWithKey:value:</TokenIdentifier>
+			<Abstract type="html">Method used to add an attibute to the APObject.
+Attributes are used to store extra information.</Abstract>
+			<DeclaredIn>APObject.h</DeclaredIn>			
+			
+			<Declaration>- (void)addAttributeWithKey:(NSString *)keyName value:(id)object</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>keyName</Name>
+					<Abstract type="html">key of the data item to be stored.</Abstract>
+				</Parameter><Parameter>
+					<Name>object</Name>
+					<Abstract type="html">Corresponding value to the key.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addAttributeWithKey:value:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/APObject/saveObject</TokenIdentifier>
+			<Abstract type="html">saveObjectWithSuccessHandler:failureHandler:</Abstract>
+			<DeclaredIn>APObject.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/APObject/saveObjectWithSuccessHandler:failureHandler:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)saveObject</Declaration>
+			
+			
+			<Anchor>//api/name/saveObject</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/APObject/saveObjectWithFailureHandler:</TokenIdentifier>
+			<Abstract type="html">saveObjectWithSuccessHandler:failureHandler:</Abstract>
+			<DeclaredIn>APObject.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/APObject/saveObjectWithSuccessHandler:failureHandler:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)saveObjectWithFailureHandler:(APFailureBlock)failureBlock</Declaration>
+			
+			
+			<Anchor>//api/name/saveObjectWithFailureHandler:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/APObject/saveObjectWithSuccessHandler:failureHandler:</TokenIdentifier>
+			<Abstract type="html">Save the article on the remote server.</Abstract>
+			<DeclaredIn>APObject.h</DeclaredIn>			
+			
+			<Declaration>- (void)saveObjectWithSuccessHandler:(APResultSuccessBlock)successBlock failureHandler:(APFailureBlock)failureBlock</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>successBlock</Name>
+					<Abstract type="html">Block invoked when the save operation is successful</Abstract>
+				</Parameter><Parameter>
+					<Name>failureBlock</Name>
+					<Abstract type="html">Block invoked when the save operation fails.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/saveObjectWithSuccessHandler:failureHandler:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/APObject/applyFilterGraphQuery:successHandler:</TokenIdentifier>
+			<Abstract type="html">applyFilterGraphQuery:successHandler:failureHandler:</Abstract>
+			<DeclaredIn>APObject.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/clm/APObject/applyFilterGraphQuery:successHandler:failureHandler:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>+ (void)applyFilterGraphQuery:(NSString *)query successHandler:(APResultSuccessBlock)successBlock</Declaration>
+			
+			
+			<Anchor>//api/name/applyFilterGraphQuery:successHandler:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/APObject/applyFilterGraphQuery:successHandler:failureHandler:</TokenIdentifier>
+			<Abstract type="html">Searches for APObjects that satisfy the filter graph query.</Abstract>
+			<DeclaredIn>APObject.h</DeclaredIn>			
+			
+			<Declaration>+ (void)applyFilterGraphQuery:(NSString *)query successHandler:(APResultSuccessBlock)successBlock failureHandler:(APFailureBlock)failureBlock</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>query</Name>
+					<Abstract type="html">A string representing the filter graph query.</Abstract>
+				</Parameter><Parameter>
+					<Name>successBlock</Name>
+					<Abstract type="html">Block invoked when query is successfully executed.</Abstract>
+				</Parameter><Parameter>
+					<Name>failureBlock</Name>
+					<Abstract type="html">Block invoked when query execution fails.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/applyFilterGraphQuery:successHandler:failureHandler:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/APObject/applyProjectionGraphQuery:successHandler:</TokenIdentifier>
+			<Abstract type="html">applyProjectionGraphQuery:successHandler:failureHandler:</Abstract>
+			<DeclaredIn>APObject.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/clm/APObject/applyProjectionGraphQuery:successHandler:failureHandler:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>+ (void)applyProjectionGraphQuery:(NSString *)query successHandler:(APResultSuccessBlock)successBlock</Declaration>
+			
+			
+			<Anchor>//api/name/applyProjectionGraphQuery:successHandler:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/APObject/applyProjectionGraphQuery:successHandler:failureHandler:</TokenIdentifier>
+			<Abstract type="html">Searches for APObjects that satisfy the projection graph query.</Abstract>
+			<DeclaredIn>APObject.h</DeclaredIn>			
+			
+			<Declaration>+ (void)applyProjectionGraphQuery:(NSString *)query successHandler:(APResultSuccessBlock)successBlock failureHandler:(APFailureBlock)failureBlock</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>query</Name>
+					<Abstract type="html">A string representing the projection graph query.</Abstract>
+				</Parameter><Parameter>
+					<Name>successBlock</Name>
+					<Abstract type="html">Block invoked when query is successfully executed.</Abstract>
+				</Parameter><Parameter>
+					<Name>failureBlock</Name>
+					<Abstract type="html">Block invoked when query execution fails.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/applyProjectionGraphQuery:successHandler:failureHandler:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/APObject/postParamerters</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>APObject.h</DeclaredIn>			
+			
+			<Declaration>- (NSMutableDictionary *)postParamerters</Declaration>
+			
+			
+			<Anchor>//api/name/postParamerters</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

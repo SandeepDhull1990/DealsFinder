@@ -6,7 +6,6 @@
 //  Copyright (c) 2013 Appacitive. All rights reserved.
 //
 
-#import <ECSlidingViewController/ECSlidingViewController.h>
 
-@interface InitialSlidingStoreViewController : ECSlidingViewController
+@interface InitialSlidingStoreViewController : UIViewController
 @end

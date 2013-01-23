@@ -1,0 +1,914 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/APConnection.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/APConnection</TokenIdentifier>
+			<Abstract type="html">A Connection is represents an edge in a graph and is used to connect two APObjects.
+A Connection itself can store data in its properties and attributes fields.</Abstract>
+			<DeclaredIn>APConnection.h</DeclaredIn>
+			
+			<NodeRef refid="2"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/APConnection/setCreatedBy:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>APConnection.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) NSString *createdBy</Declaration>
+			
+			
+			<Anchor>//api/name/createdBy</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/APConnection/createdBy</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>APConnection.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) NSString *createdBy</Declaration>
+			
+			
+			<Anchor>//api/name/createdBy</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/APConnection/setArticleAId:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>APConnection.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *articleAId</Declaration>
+			
+			
+			<Anchor>//api/name/articleAId</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/APConnection/articleAId</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>APConnection.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *articleAId</Declaration>
+			
+			
+			<Anchor>//api/name/articleAId</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/APConnection/setArticleBId:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>APConnection.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *articleBId</Declaration>
+			
+			
+			<Anchor>//api/name/articleBId</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/APConnection/articleBId</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>APConnection.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *articleBId</Declaration>
+			
+			
+			<Anchor>//api/name/articleBId</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/APConnection/setObjectId:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>APConnection.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *objectId</Declaration>
+			
+			
+			<Anchor>//api/name/objectId</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/APConnection/objectId</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>APConnection.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *objectId</Declaration>
+			
+			
+			<Anchor>//api/name/objectId</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/APConnection/setLabelA:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>APConnection.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) NSString *labelA</Declaration>
+			
+			
+			<Anchor>//api/name/labelA</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/APConnection/labelA</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>APConnection.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) NSString *labelA</Declaration>
+			
+			
+			<Anchor>//api/name/labelA</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/APConnection/setLabelB:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>APConnection.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) NSString *labelB</Declaration>
+			
+			
+			<Anchor>//api/name/labelB</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/APConnection/labelB</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>APConnection.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) NSString *labelB</Declaration>
+			
+			
+			<Anchor>//api/name/labelB</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/APConnection/setRelationId:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>APConnection.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *relationId</Declaration>
+			
+			
+			<Anchor>//api/name/relationId</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/APConnection/relationId</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>APConnection.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *relationId</Declaration>
+			
+			
+			<Anchor>//api/name/relationId</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/APConnection/setRelationType:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>APConnection.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) NSString *relationType</Declaration>
+			
+			
+			<Anchor>//api/name/relationType</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/APConnection/relationType</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>APConnection.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) NSString *relationType</Declaration>
+			
+			
+			<Anchor>//api/name/relationType</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/APConnection/setLastModifiedBy:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>APConnection.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong, readonly) NSString *lastModifiedBy</Declaration>
+			
+			
+			<Anchor>//api/name/lastModifiedBy</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/APConnection/lastModifiedBy</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>APConnection.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong, readonly) NSString *lastModifiedBy</Declaration>
+			
+			
+			<Anchor>//api/name/lastModifiedBy</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/APConnection/setUtcDateCreated:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>APConnection.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong, readonly) NSDate *utcDateCreated</Declaration>
+			
+			
+			<Anchor>//api/name/utcDateCreated</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/APConnection/utcDateCreated</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>APConnection.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong, readonly) NSDate *utcDateCreated</Declaration>
+			
+			
+			<Anchor>//api/name/utcDateCreated</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/APConnection/setUtcLastModifiedDate:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>APConnection.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong, readonly) NSDate *utcLastModifiedDate</Declaration>
+			
+			
+			<Anchor>//api/name/utcLastModifiedDate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/APConnection/utcLastModifiedDate</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>APConnection.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong, readonly) NSDate *utcLastModifiedDate</Declaration>
+			
+			
+			<Anchor>//api/name/utcLastModifiedDate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/APConnection/setRevision:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>APConnection.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong, readonly) NSNumber *revision</Declaration>
+			
+			
+			<Anchor>//api/name/revision</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/APConnection/revision</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>APConnection.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong, readonly) NSNumber *revision</Declaration>
+			
+			
+			<Anchor>//api/name/revision</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/APConnection/setProperties:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>APConnection.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong, readonly) NSMutableArray *properties</Declaration>
+			
+			
+			<Anchor>//api/name/properties</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/APConnection/properties</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>APConnection.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong, readonly) NSMutableArray *properties</Declaration>
+			
+			
+			<Anchor>//api/name/properties</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/APConnection/setAttributes:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>APConnection.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong, readonly) NSMutableArray *attributes</Declaration>
+			
+			
+			<Anchor>//api/name/attributes</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/APConnection/attributes</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>APConnection.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong, readonly) NSMutableArray *attributes</Declaration>
+			
+			
+			<Anchor>//api/name/attributes</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/APConnection/setTags:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>APConnection.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) NSArray *tags</Declaration>
+			
+			
+			<Anchor>//api/name/tags</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/APConnection/tags</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>APConnection.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) NSArray *tags</Declaration>
+			
+			
+			<Anchor>//api/name/tags</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/APConnection/connectionWithRelationType:</TokenIdentifier>
+			<Abstract type="html">Initialize and return an APConnection for the provided relation type.</Abstract>
+			<DeclaredIn>APConnection.h</DeclaredIn>			
+			
+			<Declaration>+ (id)connectionWithRelationType:(NSString *)relationType</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>relationType</Name>
+					<Abstract type="html">The name of the relation. This is specified while creating the schema.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/connectionWithRelationType:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/APConnection/initWithRelationType:</TokenIdentifier>
+			<Abstract type="html">Initialize and return an APConnection for the provided relation type.</Abstract>
+			<DeclaredIn>APConnection.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithRelationType:(NSString *)relationType</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>relationType</Name>
+					<Abstract type="html">The name of the relation. This is specified while creating the schema.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/initWithRelationType:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/APConnection/searchForAllConnectionsWithRelationType:successHandler:</TokenIdentifier>
+			<Abstract type="html">searchForAllConnectionsWithRelationType:successHandler:failureHandler:</Abstract>
+			<DeclaredIn>APConnection.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/clm/APConnection/searchForAllConnectionsWithRelationType:successHandler:failureHandler:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>+ (void)searchForAllConnectionsWithRelationType:(NSString *)relationType successHandler:(APResultSuccessBlock)successBlock</Declaration>
+			
+			
+			<Anchor>//api/name/searchForAllConnectionsWithRelationType:successHandler:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/APConnection/searchForAllConnectionsWithRelationType:successHandler:failureHandler:</TokenIdentifier>
+			<Abstract type="html">Search for all APConnections of a particular relation type.</Abstract>
+			<DeclaredIn>APConnection.h</DeclaredIn>			
+			
+			<Declaration>+ (void)searchForAllConnectionsWithRelationType:(NSString *)relationType successHandler:(APResultSuccessBlock)successBlock failureHandler:(APFailureBlock)failureBlock</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>relationType</Name>
+					<Abstract type="html">The relation type that the connections should belong to.</Abstract>
+				</Parameter><Parameter>
+					<Name>successBlock</Name>
+					<Abstract type="html">Block invoked when the search call is successful.</Abstract>
+				</Parameter><Parameter>
+					<Name>failureBlock</Name>
+					<Abstract type="html">Block invoked when the search call fails.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/searchForAllConnectionsWithRelationType:successHandler:failureHandler:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/APConnection/searchForConnectionsWithRelationType:withQueryString:successHandler:</TokenIdentifier>
+			<Abstract type="html">searchForConnectionsWithRelationType:withQueryString:successHandler:failureHandler:</Abstract>
+			<DeclaredIn>APConnection.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/clm/APConnection/searchForConnectionsWithRelationType:withQueryString:successHandler:failureHandler:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>+ (void)searchForConnectionsWithRelationType:(NSString *)relationType withQueryString:(NSString *)queryString successHandler:(APResultSuccessBlock)successBlock</Declaration>
+			
+			
+			<Anchor>//api/name/searchForConnectionsWithRelationType:withQueryString:successHandler:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/APConnection/searchForConnectionsWithRelationType:withQueryString:successHandler:failureHandler:</TokenIdentifier>
+			<Abstract type="html">Searches for APConnections and filters the result according to the query provided.</Abstract>
+			<DeclaredIn>APConnection.h</DeclaredIn>			
+			
+			<Declaration>+ (void)searchForConnectionsWithRelationType:(NSString *)relationType withQueryString:(NSString *)queryString successHandler:(APResultSuccessBlock)successBlock failureHandler:(APFailureBlock)failureBlock</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>relationType</Name>
+					<Abstract type="html">The relation type that the connections should belong to.</Abstract>
+				</Parameter><Parameter>
+					<Name>queryString</Name>
+					<Abstract type="html">SQL kind of query to search for specific objects. For more info http://appacitive.com</Abstract>
+				</Parameter><Parameter>
+					<Name>successBlock</Name>
+					<Abstract type="html">Block invoked when the search call is successful.</Abstract>
+				</Parameter><Parameter>
+					<Name>failureBlock</Name>
+					<Abstract type="html">Block invoked when the search call fails.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/searchForConnectionsWithRelationType:withQueryString:successHandler:failureHandler:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/APConnection/create</TokenIdentifier>
+			<Abstract type="html">createConnectionWithSuccessHandler:failureHandler:</Abstract>
+			<DeclaredIn>APConnection.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/APConnection/createConnectionWithSuccessHandler:failureHandler:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)create</Declaration>
+			
+			
+			<Anchor>//api/name/create</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/APConnection/createConnectionWithFailureHandler:</TokenIdentifier>
+			<Abstract type="html">createConnectionWithSuccessHandler:failureHandler:</Abstract>
+			<DeclaredIn>APConnection.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/APConnection/createConnectionWithSuccessHandler:failureHandler:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)createConnectionWithFailureHandler:(APFailureBlock)failureBlock</Declaration>
+			
+			
+			<Anchor>//api/name/createConnectionWithFailureHandler:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/APConnection/createConnectionWithSuccessHandler:failureHandler:</TokenIdentifier>
+			<Abstract type="html">Create an APConnection between two APObjects on the remote server.</Abstract>
+			<DeclaredIn>APConnection.h</DeclaredIn>			
+			
+			<Declaration>- (void)createConnectionWithSuccessHandler:(APSuccessBlock)successBlock failureHandler:(APFailureBlock)failureBlock</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>successBlock</Name>
+					<Abstract type="html">Block invoked when the create operation is successful.</Abstract>
+				</Parameter><Parameter>
+					<Name>failureBlock</Name>
+					<Abstract type="html">Block invoked when the create operation fails.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/createConnectionWithSuccessHandler:failureHandler:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/APConnection/createConnectionWithObjectA:objectB:</TokenIdentifier>
+			<Abstract type="html">createConnectionWithObjectA:objectB:successHandler:failureHandler:</Abstract>
+			<DeclaredIn>APConnection.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/APConnection/createConnectionWithObjectA:objectB:successHandler:failureHandler:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)createConnectionWithObjectA:(APObject *)objectA objectB:(APObject *)objectB</Declaration>
+			
+			
+			<Anchor>//api/name/createConnectionWithObjectA:objectB:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/APConnection/createConnectionWithObjectA:objectB:failureHandler:</TokenIdentifier>
+			<Abstract type="html">createConnectionWithObjectA:objectB:successHandler:failureHandler:</Abstract>
+			<DeclaredIn>APConnection.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/APConnection/createConnectionWithObjectA:objectB:successHandler:failureHandler:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)createConnectionWithObjectA:(APObject *)objectA objectB:(APObject *)objectB failureHandler:(APFailureBlock)failureBlock</Declaration>
+			
+			
+			<Anchor>//api/name/createConnectionWithObjectA:objectB:failureHandler:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/APConnection/createConnectionWithObjectA:objectB:successHandler:failureHandler:</TokenIdentifier>
+			<Abstract type="html">Creates an APConnection between two APObjects.</Abstract>
+			<DeclaredIn>APConnection.h</DeclaredIn>			
+			
+			<Declaration>- (void)createConnectionWithObjectA:(APObject *)objectA objectB:(APObject *)objectB successHandler:(APSuccessBlock)successBlock failureHandler:(APFailureBlock)failureBlock</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>objectA</Name>
+					<Abstract type="html">The article to create a connection from.</Abstract>
+				</Parameter><Parameter>
+					<Name>objectB</Name>
+					<Abstract type="html">The article to create a connection to.</Abstract>
+				</Parameter><Parameter>
+					<Name>successBlock</Name>
+					<Abstract type="html">Block invoked when the create operation is successful.</Abstract>
+				</Parameter><Parameter>
+					<Name>failureBlock</Name>
+					<Abstract type="html">Block invoked when the create operation fails.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/createConnectionWithObjectA:objectB:successHandler:failureHandler:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/APConnection/createConnectionWithObjectA:objectB:labelA:labelB:</TokenIdentifier>
+			<Abstract type="html">createConnectionWithObjectA:objectB:labelA:labelB:successHandler:failureHandler:</Abstract>
+			<DeclaredIn>APConnection.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/APConnection/createConnectionWithObjectA:objectB:labelA:labelB:successHandler:failureHandler:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)createConnectionWithObjectA:(APObject *)objectA objectB:(APObject *)objectB labelA:(NSString *)labelA labelB:(NSString *)labelB</Declaration>
+			
+			
+			<Anchor>//api/name/createConnectionWithObjectA:objectB:labelA:labelB:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/APConnection/createConnectionWithObjectA:objectB:labelA:labelB:failureHandler:</TokenIdentifier>
+			<Abstract type="html">createConnectionWithObjectA:objectB:labelA:labelB:successHandler:failureHandler:</Abstract>
+			<DeclaredIn>APConnection.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/APConnection/createConnectionWithObjectA:objectB:labelA:labelB:successHandler:failureHandler:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)createConnectionWithObjectA:(APObject *)objectA objectB:(APObject *)objectB labelA:(NSString *)labelA labelB:(NSString *)labelB failureHandler:(APFailureBlock)failureBlock</Declaration>
+			
+			
+			<Anchor>//api/name/createConnectionWithObjectA:objectB:labelA:labelB:failureHandler:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/APConnection/createConnectionWithObjectA:objectB:labelA:labelB:successHandler:failureHandler:</TokenIdentifier>
+			<Abstract type="html">Creates an APConnection between two APObjects. The labels on either side of the connection are specified as parameters.</Abstract>
+			<DeclaredIn>APConnection.h</DeclaredIn>			
+			
+			<Declaration>- (void)createConnectionWithObjectA:(APObject *)objectA objectB:(APObject *)objectB labelA:(NSString *)labelA labelB:(NSString *)labelB successHandler:(APSuccessBlock)successBlock failureHandler:(APFailureBlock)failureBlock</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>objectA</Name>
+					<Abstract type="html">The article to create a connection from.</Abstract>
+				</Parameter><Parameter>
+					<Name>objectB</Name>
+					<Abstract type="html">The article to create a connection to.</Abstract>
+				</Parameter><Parameter>
+					<Name>labelA</Name>
+					<Abstract type="html">The label at the starting vertex of the connection.</Abstract>
+				</Parameter><Parameter>
+					<Name>successBlock</Name>
+					<Abstract type="html">Block invoked when the create operation is successful.</Abstract>
+				</Parameter><Parameter>
+					<Name>failureBlock</Name>
+					<Abstract type="html">Block invoked when the create operation fails.</Abstract>
+				</Parameter><Parameter>
+					<Name>lablelB</Name>
+					<Abstract type="html">The label at the end vertex of the connection.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/createConnectionWithObjectA:objectB:labelA:labelB:successHandler:failureHandler:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/APConnection/createConnectionWithObjectAId:objectBId:labelA:labelB:</TokenIdentifier>
+			<Abstract type="html">createConnectionWithObjectAId:objectBId:labelA:labelB:successHandler:failureHandler:</Abstract>
+			<DeclaredIn>APConnection.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/APConnection/createConnectionWithObjectAId:objectBId:labelA:labelB:successHandler:failureHandler:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)createConnectionWithObjectAId:(NSNumber *)objectAId objectBId:(NSNumber *)objectBId labelA:(NSString *)labelA labelB:(NSString *)labelB</Declaration>
+			
+			
+			<Anchor>//api/name/createConnectionWithObjectAId:objectBId:labelA:labelB:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/APConnection/createConnectionWithObjectAId:objectBId:labelA:labelB:failureHandler:</TokenIdentifier>
+			<Abstract type="html">createConnectionWithObjectAId:objectBId:labelA:labelB:successHandler:failureHandler:</Abstract>
+			<DeclaredIn>APConnection.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/APConnection/createConnectionWithObjectAId:objectBId:labelA:labelB:successHandler:failureHandler:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)createConnectionWithObjectAId:(NSNumber *)objectAId objectBId:(NSNumber *)objectBId labelA:(NSString *)labelA labelB:(NSString *)labelB failureHandler:(APFailureBlock)failureBlock</Declaration>
+			
+			
+			<Anchor>//api/name/createConnectionWithObjectAId:objectBId:labelA:labelB:failureHandler:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/APConnection/createConnectionWithObjectAId:objectBId:labelA:labelB:successHandler:failureHandler:</TokenIdentifier>
+			<Abstract type="html">Creates an APConnection between two APObjects.</Abstract>
+			<DeclaredIn>APConnection.h</DeclaredIn>			
+			
+			<Declaration>- (void)createConnectionWithObjectAId:(NSNumber *)objectAId objectBId:(NSNumber *)objectBId labelA:(NSString *)labelA labelB:(NSString *)labelB successHandler:(APSuccessBlock)successBlock failureHandler:(APFailureBlock)failureBlock</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>objectAId</Name>
+					<Abstract type="html">The id of the APObject to create a connection from.</Abstract>
+				</Parameter><Parameter>
+					<Name>objectBId</Name>
+					<Abstract type="html">The id of the APObject to create a connection to.</Abstract>
+				</Parameter><Parameter>
+					<Name>labelA</Name>
+					<Abstract type="html">The label at the starting vertex of the connection.</Abstract>
+				</Parameter><Parameter>
+					<Name>labelB</Name>
+					<Abstract type="html">The label at the end vertex of the connection.</Abstract>
+				</Parameter><Parameter>
+					<Name>failureHandler</Name>
+					<Abstract type="html">Block invoked when the create operation fails.</Abstract>
+				</Parameter><Parameter>
+					<Name>successHandler</Name>
+					<Abstract type="html">Block invoked when the create operation is successful.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/createConnectionWithObjectAId:objectBId:labelA:labelB:successHandler:failureHandler:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/APConnection/fetchConnectionWithRelationType:objectId:successHandler:</TokenIdentifier>
+			<Abstract type="html">fetchConnectionWithRelationType:objectId:successHandler:failureHandler:</Abstract>
+			<DeclaredIn>APConnection.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/clm/APConnection/fetchConnectionWithRelationType:objectId:successHandler:failureHandler:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>+ (void)fetchConnectionWithRelationType:(NSString *)relationType objectId:(NSNumber *)objectId successHandler:(APResultSuccessBlock)successBlock</Declaration>
+			
+			
+			<Anchor>//api/name/fetchConnectionWithRelationType:objectId:successHandler:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/APConnection/fetchConnectionWithRelationType:objectId:successHandler:failureHandler:</TokenIdentifier>
+			<Abstract type="html">Fetch an APConnection of a particular relation type.</Abstract>
+			<DeclaredIn>APConnection.h</DeclaredIn>			
+			
+			<Declaration>+ (void)fetchConnectionWithRelationType:(NSString *)relationType objectId:(NSNumber *)objectId successHandler:(APResultSuccessBlock)successBlock failureHandler:(APFailureBlock)failureBlock</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>relationType</Name>
+					<Abstract type="html">The name of the relation. A connection of this relation name is retrieved.</Abstract>
+				</Parameter><Parameter>
+					<Name>objectId</Name>
+					<Abstract type="html">The id of the connection to retrieve.</Abstract>
+				</Parameter><Parameter>
+					<Name>successBlock</Name>
+					<Abstract type="html">Block invoked when the fetch call is successful. The block returns the results in the form of a JSON.</Abstract>
+				</Parameter><Parameter>
+					<Name>failureBlock</Name>
+					<Abstract type="html">Block invoked when the fetch call operation fails.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/fetchConnectionWithRelationType:objectId:successHandler:failureHandler:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/APConnection/fetchConnectionsWithRelationType:objectIds:successHandler:</TokenIdentifier>
+			<Abstract type="html">fetchConnectionsWithRelationType:objectId:successHandler:failureHandler:</Abstract>
+			<DeclaredIn>APConnection.h</DeclaredIn>			
+			
+			<Declaration>+ (void)fetchConnectionsWithRelationType:(NSString *)relationType objectIds:(NSArray *)objectIds successHandler:(APResultSuccessBlock)successBlock</Declaration>
+			
+			
+			<Anchor>//api/name/fetchConnectionsWithRelationType:objectIds:successHandler:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/APConnection/fetchConnectionsWithRelationType:objectIds:successHandler:failureHandler:</TokenIdentifier>
+			<Abstract type="html">Fetches multiple APConnections from the remote server.</Abstract>
+			<DeclaredIn>APConnection.h</DeclaredIn>			
+			
+			<Declaration>+ (void)fetchConnectionsWithRelationType:(NSString *)relationType objectIds:(NSArray *)objectIds successHandler:(APResultSuccessBlock)successBlock failureHandler:(APFailureBlock)failureBlock</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>relationType</Name>
+					<Abstract type="html">The name of the relation. Connections of this relation are retrieved.</Abstract>
+				</Parameter><Parameter>
+					<Name>objectIds</Name>
+					<Abstract type="html">An array of objectIds. Connections with these object ids are fetched.</Abstract>
+				</Parameter><Parameter>
+					<Name>successBlock</Name>
+					<Abstract type="html">Block invoked when the fetch call is successful. The block returns the results in the form of a JSON.</Abstract>
+				</Parameter><Parameter>
+					<Name>failureBlock</Name>
+					<Abstract type="html">Block invoked when the fetch call operation fails.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/fetchConnectionsWithRelationType:objectIds:successHandler:failureHandler:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/APConnection/deleteConnectionsWithRelationType:objectIds:</TokenIdentifier>
+			<Abstract type="html">deleteConnectionsWithRelationType:objectIds:successHandler:failureHandler:</Abstract>
+			<DeclaredIn>APConnection.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/clm/APConnection/deleteConnectionsWithRelationType:objectIds:successHandler:failureHandler:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>+ (void)deleteConnectionsWithRelationType:(NSString *)relationType objectIds:(NSArray *)objectIds</Declaration>
+			
+			
+			<Anchor>//api/name/deleteConnectionsWithRelationType:objectIds:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/APConnection/deleteConnectionsWithRelationType:objectIds:failureHandler:</TokenIdentifier>
+			<Abstract type="html">deleteConnectionsWithRelationType:objectIds:successHandler:failureHandler:</Abstract>
+			<DeclaredIn>APConnection.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/clm/APConnection/deleteConnectionsWithRelationType:objectIds:successHandler:failureHandler:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>+ (void)deleteConnectionsWithRelationType:(NSString *)relationType objectIds:(NSArray *)objectIds failureHandler:(APFailureBlock)failureBlock</Declaration>
+			
+			
+			<Anchor>//api/name/deleteConnectionsWithRelationType:objectIds:failureHandler:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/APConnection/deleteConnectionsWithRelationType:objectIds:successHandler:failureHandler:</TokenIdentifier>
+			<Abstract type="html">Deletes multiple APConnections.</Abstract>
+			<DeclaredIn>APConnection.h</DeclaredIn>			
+			
+			<Declaration>+ (void)deleteConnectionsWithRelationType:(NSString *)relationType objectIds:(NSArray *)objectIds successHandler:(APSuccessBlock)successBlock failureHandler:(APFailureBlock)failureBlock</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>relationType</Name>
+					<Abstract type="html">The name of the relation. Connections of this relation name will be deleted.</Abstract>
+				</Parameter><Parameter>
+					<Name>objectIds</Name>
+					<Abstract type="html">An array of objectIds. APConnections having these object ids will be deleted.</Abstract>
+				</Parameter><Parameter>
+					<Name>successBlock</Name>
+					<Abstract type="html">Block invoked when the delete call is successful.</Abstract>
+				</Parameter><Parameter>
+					<Name>failureBlock</Name>
+					<Abstract type="html">Block invoked when the delete call fails.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/deleteConnectionsWithRelationType:objectIds:successHandler:failureHandler:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/APConnection/deleteConnection</TokenIdentifier>
+			<Abstract type="html">deleteConnectionWithSuccessHandler:failureHandler:</Abstract>
+			<DeclaredIn>APConnection.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/APConnection/deleteConnectionWithSuccessHandler:failureHandler:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)deleteConnection</Declaration>
+			
+			
+			<Anchor>//api/name/deleteConnection</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/APConnection/deleteConnectionWithFailureHandler:</TokenIdentifier>
+			<Abstract type="html">deleteConnectionWithSuccessHandler:failureHandler:</Abstract>
+			<DeclaredIn>APConnection.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/APConnection/deleteConnectionWithSuccessHandler:failureHandler:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)deleteConnectionWithFailureHandler:(APFailureBlock)failureBlock</Declaration>
+			
+			
+			<Anchor>//api/name/deleteConnectionWithFailureHandler:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/APConnection/deleteConnectionWithSuccessHandler:failureHandler:</TokenIdentifier>
+			<Abstract type="html">Deletes an APConnection.</Abstract>
+			<DeclaredIn>APConnection.h</DeclaredIn>			
+			
+			<Declaration>- (void)deleteConnectionWithSuccessHandler:(APSuccessBlock)successBlock failureHandler:(APFailureBlock)failureBlock</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>successBlock</Name>
+					<Abstract type="html">Block invoked when delete is successful.</Abstract>
+				</Parameter><Parameter>
+					<Name>failureBlock</Name>
+					<Abstract type="html">Block invoked when delete fails.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/deleteConnectionWithSuccessHandler:failureHandler:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/APConnection/addPropertyWithKey:value:</TokenIdentifier>
+			<Abstract type="html">Method used to add a property to the APObject.</Abstract>
+			<DeclaredIn>APConnection.h</DeclaredIn>			
+			
+			<Declaration>- (void)addPropertyWithKey:(NSString *)keyName value:(id)object</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>keyName</Name>
+					<Abstract type="html">key of the data item to be stored.</Abstract>
+				</Parameter><Parameter>
+					<Name>object</Name>
+					<Abstract type="html">Corresponding value to the key.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addPropertyWithKey:value:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/APConnection/addAttributeWithKey:value:</TokenIdentifier>
+			<Abstract type="html">Method used to add an attibute to the APObject. Attributes are used to store extra information.</Abstract>
+			<DeclaredIn>APConnection.h</DeclaredIn>			
+			
+			<Declaration>- (void)addAttributeWithKey:(NSString *)keyName value:(id)object</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>keyName</Name>
+					<Abstract type="html">key of the data item to be stored.</Abstract>
+				</Parameter><Parameter>
+					<Name>object</Name>
+					<Abstract type="html">Corresponding value to the key.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addAttributeWithKey:value:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

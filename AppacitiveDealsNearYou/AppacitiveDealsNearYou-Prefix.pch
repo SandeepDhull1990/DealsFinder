@@ -13,4 +13,5 @@
     #import <Foundation/Foundation.h>
     #import <Appacitive-iOS-SDK/AppacitiveSDK.h>
     #import <Facebook-iOS-SDK/FacebookSDK/FacebookSDK.h>
+    #import "SWRevealViewController.h"
 #endif

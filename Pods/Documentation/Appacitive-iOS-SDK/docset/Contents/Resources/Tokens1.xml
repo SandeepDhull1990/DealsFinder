@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/APBlob.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/APBlob</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>APBlob.h</DeclaredIn>
+			
+			<NodeRef refid="1"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/APBlob/uploadFileWithName:mimeType:</TokenIdentifier>
+			<Abstract type="html">uploadFileWithName:mimeType:successHandler:</Abstract>
+			<DeclaredIn>APBlob.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/clm/APBlob/uploadFileWithName:mimeType:successHandler:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>+ (void)uploadFileWithName:(NSString *)fileName mimeType:(NSString *)mimeType</Declaration>
+			
+			
+			<Anchor>//api/name/uploadFileWithName:mimeType:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/APBlob/uploadFileWithName:mimeType:successHandler:</TokenIdentifier>
+			<Abstract type="html">Helper method to upload a file to the remote server.</Abstract>
+			<DeclaredIn>APBlob.h</DeclaredIn>			
+			
+			<Declaration>+ (void)uploadFileWithName:(NSString *)fileName mimeType:(NSString *)mimeType successHandler:(APResultSuccessBlock)successBlock</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>fileName</Name>
+					<Abstract type="html">The file name with the path to upload.</Abstract>
+				</Parameter><Parameter>
+					<Name>mimeType</Name>
+					<Abstract type="html">Mime type of the file being uploaded.</Abstract>
+				</Parameter><Parameter>
+					<Name>successBlock</Name>
+					<Abstract type="html">Block invoked when upload is successful. It will return an article.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/uploadFileWithName:mimeType:successHandler:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/APBlob/uploadFileWithName:mimeType:successHandler:failureHandler:</TokenIdentifier>
+			<Abstract type="html">Helper method to upload a file to the remote server.</Abstract>
+			<DeclaredIn>APBlob.h</DeclaredIn>			
+			
+			<Declaration>+ (void)uploadFileWithName:(NSString *)fileName mimeType:(NSString *)mimeType successHandler:(APResultSuccessBlock)successBlock failureHandler:(APFailureBlock)failureBlock</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>fileName</Name>
+					<Abstract type="html">The file name with the path to upload.</Abstract>
+				</Parameter><Parameter>
+					<Name>mimeType</Name>
+					<Abstract type="html">Mime type of the file being uploaded.</Abstract>
+				</Parameter><Parameter>
+					<Name>successBlock</Name>
+					<Abstract type="html">Block invoked when upload is successful. It will return an article.</Abstract>
+				</Parameter><Parameter>
+					<Name>failureBlock</Name>
+					<Abstract type="html">Block invoked when upload fails.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/uploadFileWithName:mimeType:successHandler:failureHandler:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/APBlob/uploadFileWithName:mimeType:uploadProgressBlock:successHandler:failureHandler:</TokenIdentifier>
+			<Abstract type="html">Helper method to upload a file to the remote server.</Abstract>
+			<DeclaredIn>APBlob.h</DeclaredIn>			
+			
+			<Declaration>+ (void)uploadFileWithName:(NSString *)fileName mimeType:(NSString *)mimeType uploadProgressBlock:(MKNKProgressBlock)uploadProgressBlock successHandler:(APResultSuccessBlock)successBlock failureHandler:(APFailureBlock)failureBlock</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>fileName</Name>
+					<Abstract type="html">The file name with the path to upload.</Abstract>
+				</Parameter><Parameter>
+					<Name>mimeType</Name>
+					<Abstract type="html">Mime type of the file being uploaded.</Abstract>
+				</Parameter><Parameter>
+					<Name>uploadProgressBlock</Name>
+					<Abstract type="html">Block invoked when upload progress changes.</Abstract>
+				</Parameter><Parameter>
+					<Name>successBlock</Name>
+					<Abstract type="html">Block invoked when upload is successful. It will return an article.</Abstract>
+				</Parameter><Parameter>
+					<Name>failureBlock</Name>
+					<Abstract type="html">Block invoked when upload fails.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/uploadFileWithName:mimeType:uploadProgressBlock:successHandler:failureHandler:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/APBlob/downloadFileFromRemoteUrl:toFile:</TokenIdentifier>
+			<Abstract type="html">downloadFileFromRemoteUrl:toFile:successHandler:failureHandler:</Abstract>
+			<DeclaredIn>APBlob.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/clm/APBlob/downloadFileFromRemoteUrl:toFile:successHandler:failureHandler:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>+ (void)downloadFileFromRemoteUrl:(NSString *)url toFile:(NSString *)fileName</Declaration>
+			
+			
+			<Anchor>//api/name/downloadFileFromRemoteUrl:toFile:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/APBlob/downloadFileFromRemoteUrl:toFile:successHandler:</TokenIdentifier>
+			<Abstract type="html">downloadFileFromRemoteUrl:toFile:successHandler:failureHandler:</Abstract>
+			<DeclaredIn>APBlob.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/clm/APBlob/downloadFileFromRemoteUrl:toFile:successHandler:failureHandler:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>+ (void)downloadFileFromRemoteUrl:(NSString *)url toFile:(NSString *)fileName successHandler:(APSuccessBlock)successBlock</Declaration>
+			
+			
+			<Anchor>//api/name/downloadFileFromRemoteUrl:toFile:successHandler:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/APBlob/downloadFileFromRemoteUrl:toFile:successHandler:failureHandler:</TokenIdentifier>
+			<Abstract type="html">Helper method to download a file from the remote server.</Abstract>
+			<DeclaredIn>APBlob.h</DeclaredIn>			
+			
+			<Declaration>+ (void)downloadFileFromRemoteUrl:(NSString *)url toFile:(NSString *)fileName successHandler:(APSuccessBlock)successBlock failureHandler:(APFailureBlock)failureBlock</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>url</Name>
+					<Abstract type="html">URL string pointing to the remote file.</Abstract>
+				</Parameter><Parameter>
+					<Name>fileName</Name>
+					<Abstract type="html">The file with the path to download to.</Abstract>
+				</Parameter><Parameter>
+					<Name>successBlock</Name>
+					<Abstract type="html">Block invoked when download is successful.</Abstract>
+				</Parameter><Parameter>
+					<Name>failureBlock</Name>
+					<Abstract type="html">Block invoked when download fails.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/downloadFileFromRemoteUrl:toFile:successHandler:failureHandler:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/APBlob/downloadFileFromRemoteUrl:toFile:downloadProgressBlock:successHandler:failureHandler:</TokenIdentifier>
+			<Abstract type="html">Helper method to download a file from the remote server.</Abstract>
+			<DeclaredIn>APBlob.h</DeclaredIn>			
+			
+			<Declaration>+ (void)downloadFileFromRemoteUrl:(NSString *)url toFile:(NSString *)fileName downloadProgressBlock:(MKNKProgressBlock)downloadProgressBlock successHandler:(APSuccessBlock)successBlock failureHandler:(APFailureBlock)failureBlock</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>url</Name>
+					<Abstract type="html">URL string pointing to the remote file.</Abstract>
+				</Parameter><Parameter>
+					<Name>fileName</Name>
+					<Abstract type="html">The file with the path to download to.</Abstract>
+				</Parameter><Parameter>
+					<Name>downloadProgressBlock</Name>
+					<Abstract type="html">Block invoked when the download progress changes.</Abstract>
+				</Parameter><Parameter>
+					<Name>successBlock</Name>
+					<Abstract type="html">Block invoked when download is successful.</Abstract>
+				</Parameter><Parameter>
+					<Name>failureBlock</Name>
+					<Abstract type="html">Block invoked when download fails.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/downloadFileFromRemoteUrl:toFile:downloadProgressBlock:successHandler:failureHandler:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

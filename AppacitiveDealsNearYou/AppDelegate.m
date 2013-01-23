@@ -9,15 +9,6 @@
 #import "AppDelegate.h"
 #import "FacebookSDK.h"
 #import "LoginViewController.h"
-#import "InitialSlidingViewController.h"
-#import "NavigationTopViewController.h"
-#import <ECSlidingViewController/ECSlidingViewController.h>
-#import "MenuViewController.h"
-
-@interface AppDelegate()
-@property (strong, nonatomic) InitialSlidingViewController *initialSlidingViewController;
-@property (strong, nonatomic) LoginViewController *loginViewController;
-@end
 
 @implementation AppDelegate
 NSString *const SCSessionStateChangedNotification = @"com.appacitive.AppacitiveDealsNearYou:SCSessionStateChangedNotification";
@@ -47,14 +38,7 @@ NSString *const SCSessionStateChangedNotification = @"com.appacitive.AppacitiveD
             [userDefaults setObject:session.accessToken forKey:@"UserAccessToken"];//extern
             
             [APUser authenticateUserWithFacebook:session.accessToken successHandler:^(){
-                UIStoryboard *storyboard;
-                if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone) {
-                    storyboard = [UIStoryboard storyboardWithName:@"iPhone" bundle:nil];
-                }
-                self.initialSlidingViewController = [storyboard instantiateViewControllerWithIdentifier:@"InitialSliding"];
-                [self.loginViewController presentViewController:self.initialSlidingViewController animated:YES completion:^() {
-                    
-                }];
+               
             } failureHandler:^(APError *error){
                 
             }];
@@ -63,12 +47,6 @@ NSString *const SCSessionStateChangedNotification = @"com.appacitive.AppacitiveD
         case FBSessionStateClosed:
         case FBSessionStateClosedLoginFailed: {
             [FBSession.activeSession closeAndClearTokenInformation];
-            UIStoryboard *storyboard;
-            if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone) {
-                storyboard = [UIStoryboard storyboardWithName:@"iPhone" bundle:nil];
-            }
-             self.loginViewController = [storyboard instantiateViewControllerWithIdentifier:@"Login"];
-            [self.initialSlidingViewController presentViewController:self.loginViewController animated:YES completion:^(){}];
         }
             break;
         default:

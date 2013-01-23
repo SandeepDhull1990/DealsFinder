@@ -7,7 +7,6 @@
 //
 
 #import "CreateStoreViewController.h"
-#import <ECSlidingViewController/ECSlidingViewController.h>
 #import "Store.h"
 #import "StoreImage.h"
 
@@ -48,18 +47,18 @@
 }
 
 - (IBAction)revealPublishOptions:(id)sender {
-    [self.slidingViewController anchorTopViewTo:ECRight];
+//    [self.slidingViewController anchorTopViewTo:ECRight];
 }
 
 - (IBAction)doneButton:(id)sender {
     UIViewController *newStoreViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"NavigationTopCreateDeal"];
     
-    [self.slidingViewController anchorTopViewOffScreenTo:ECRight animations:nil onComplete:^{
-        CGRect frame = self.slidingViewController.topViewController.view.frame;
-        self.slidingViewController.topViewController = newStoreViewController;
-        self.slidingViewController.topViewController.view.frame = frame;
-        [self.slidingViewController resetTopView];
-    }];
+//    [self.slidingViewController anchorTopViewOffScreenTo:ECRight animations:nil onComplete:^{
+//        CGRect frame = self.slidingViewController.topViewController.view.frame;
+//        self.slidingViewController.topViewController = newStoreViewController;
+//        self.slidingViewController.topViewController.view.frame = frame;
+//        [self.slidingViewController resetTopView];
+//    }];
 
 }
 

@@ -7,7 +7,6 @@
 //
 
 #import "CreateDealViewController.h"
-#import <ECSlidingViewController/ECSlidingViewController.h>
 
 @interface CreateDealViewController ()
 
@@ -37,6 +36,6 @@
 }
 
 - (IBAction)backToSelectStore:(id)sender {
-    [self.slidingViewController anchorTopViewTo:ECRight];
+//    [self.slidingViewController anchorTopViewTo:ECRight];
 }
 @end

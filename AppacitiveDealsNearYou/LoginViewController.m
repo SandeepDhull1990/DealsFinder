@@ -8,11 +8,6 @@
 
 #import "LoginViewController.h"
 #import "AppDelegate.h"
-#import "InitialSlidingViewController.h"
-
-@interface LoginViewController ()
-@property (strong, nonatomic) InitialSlidingViewController *initialSlidingViewController;
-@end
 
 @implementation LoginViewController
 
@@ -21,7 +16,6 @@
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(facebookSessionChangedNotification:) name:SCSessionStateChangedNotification object:nil];
 }
 
-#warning fill the error
 - (void) facebookSessionChangedNotification:(NSNotification*)notification {
     FBSession *session = [[notification userInfo] objectForKey:@"session"];
     if (session.state == FBSessionStateOpen && self.loginWithFacebookSuccessful != nil) {

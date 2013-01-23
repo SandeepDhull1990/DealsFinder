@@ -6,7 +6,5 @@
 //  Copyright (c) 2013 Appacitive. All rights reserved.
 //
 
-#import <ECSlidingViewController/ECSlidingViewController.h>
-
 @interface DealsListViewController : UITableViewController <UITableViewDataSource, UITableViewDelegate>
 @end

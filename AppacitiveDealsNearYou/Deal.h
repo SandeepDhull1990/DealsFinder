@@ -7,6 +7,7 @@
 //
 
 @interface Deal : NSObject
+@property (strong, nonatomic) NSNumber *objectId;
 @property (strong, nonatomic) NSString *dealTitle;
 @property (strong, nonatomic) NSString *dealImageUrl;
 @property (strong, nonatomic) NSString *dealImageFileName;
