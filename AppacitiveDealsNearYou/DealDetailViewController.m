@@ -11,6 +11,7 @@
 
 @interface DealDetailViewController () {
     int _voteCount;
+    JSNotifier *_notifier;
 }
 @property (weak, nonatomic) IBOutlet UIImageView *selectedDealImage;
 @property (weak, nonatomic) IBOutlet UILabel *votes;
@@ -30,18 +31,16 @@
      successHandler:^(NSDictionary *result) {
          NSArray *connections = [result objectForKey:@"connections"];
          if ([connections count] == 0) {
-             [_votes setText:@"0"];
-             [self.activityIndicatorView stopAnimating];
-             self.upvoteButton.enabled = YES;
+             _voteCount = 0;
          } else {
              _voteCount = connections.count;
-             [self.votes setText:[NSString stringWithFormat:@"%d",_voteCount]];
-             self.upvoteButton.enabled = YES;
-             [self.activityIndicatorView stopAnimating];
          }
+         [self.votes setText:[NSString stringWithFormat:@"%d",_voteCount]];
+         [self.activityIndicatorView stopAnimating];
+         self.upvoteButton.enabled = YES;
+
      } failureHandler:^(APError *error) {
          [self.activityIndicatorView stopAnimating];
-         NSLog(@"error : %@" , [error description]);
      }];
 }
 
@@ -51,13 +50,14 @@
 
 - (IBAction)upvoteButtonPressed:(id)sender {
     
+    [_notifier hide];
+    
     UIActivityIndicatorView *activityIndicator = [[UIActivityIndicatorView alloc]initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhite];
     [activityIndicator startAnimating];
     
-    JSNotifier *notify = [[JSNotifier alloc]initWithTitle:@"Updating Vote Count.."];
-//    CGRect frame = notify.frame;
-    notify.accessoryView = activityIndicator;
-    [notify show];
+    _notifier = [[JSNotifier alloc]initWithTitle:@"Updating Vote Count.."];
+    _notifier.accessoryView = activityIndicator;
+    [_notifier show];
     
     [_upvoteButton setEnabled:NO];
     
@@ -66,32 +66,35 @@
     [vote saveObjectWithSuccessHandler:^(NSDictionary *result) {
         NSDictionary *article = [result objectForKey:@"article"];
         
-        NSNumber *articleA = [article objectForKey:@"__id"];
+        NSNumber *articleAId = [article objectForKey:@"__id"];
         APConnection *connection = [APConnection connectionWithRelationType:@"votes"];
-        [connection createConnectionWithObjectAId:articleA
+        [connection createConnectionWithObjectAId:articleAId
                                         objectBId:self.deal.objectId
                                            labelA:@"vote"
                                            labelB:@"deal"
                                    successHandler:^(){
+                                       
+                                       self.upvoteButton.enabled = YES;
+                                       
                                        _voteCount = _voteCount + 1;
                                        [_votes setText:[NSString stringWithFormat:@"%d",_voteCount]];
                                        
-                                       [notify setAccessoryView:[[UIImageView alloc]initWithImage:[UIImage imageNamed:@"NotifyCheck.png"]] animated:YES];
-                                       [notify setTitle:@"Vote Count Updated" animated:YES];
-                                       [notify hideIn:3.0];
+                                       [_notifier setAccessoryView:[[UIImageView alloc]initWithImage:[UIImage imageNamed:@"NotifyCheck.png"]] animated:YES];
+                                       [_notifier setTitle:@"Vote Count Updated" animated:YES];
+                                       [_notifier hideIn:2.0];
                                        
                                    } failureHandler:^(APError *error) {
                                        
-                                       [notify setAccessoryView:[[UIImageView alloc]initWithImage:[UIImage imageNamed:@"NotifyX.png"]] animated:YES];
-                                       [notify setTitle:@"Error while updating vote count" animated:YES];
-                                       [notify hideIn:2.0];
+                                       [_notifier setAccessoryView:[[UIImageView alloc]initWithImage:[UIImage imageNamed:@"NotifyX.png"]] animated:YES];
+                                       [_notifier setTitle:@"Error while updating vote count" animated:YES];
+                                       [_notifier hideIn:2.0];
                                        
                                    }];
     } failureHandler:^(APError *error) {
         
-        [notify setAccessoryView:[[UIImageView alloc]initWithImage:[UIImage imageNamed:@"NotifyX.png"]] animated:YES];
-        [notify setTitle:@"Error while updating vote count" animated:YES];
-        [notify hideIn:2.0];
+        [_notifier setAccessoryView:[[UIImageView alloc]initWithImage:[UIImage imageNamed:@"NotifyX.png"]] animated:YES];
+        [_notifier setTitle:@"Error while updating vote count" animated:YES];
+        [_notifier hideIn:2.0];
         
     }];
 }

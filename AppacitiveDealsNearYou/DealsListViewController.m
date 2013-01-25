@@ -10,15 +10,12 @@
 #import "Deal.h"
 #import "DealDetailViewController.h"
 #import "DealsFinderHelperMethods.h"
-#import <MBProgressHUD.h>
-#import <AppacitiveSDK.h>
-#import <JSNotifier.h>
 
 #define FETCH_DEALS 1
 #define FETCH_DEALS_IMAGES 2
 
 @interface DealsListViewController () {
-    JSNotifier *notify;
+    JSNotifier *_notifier;
 }
 @property (weak, nonatomic) IBOutlet UITableView *dealTableView;
 @property (strong, nonatomic) NSMutableArray *deals;
@@ -36,12 +33,16 @@
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(sessionCreated) name:SessionReceivedNotification object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(sessionCreationFailed) name:ErrorRetrievingSessionNotification object:nil];
-
     
-    [MBProgressHUD showHUDAddedTo:self.view animated:YES];
-    if([[Appacitive sharedObject] session] != nil) {
-        [self fetchDeals];
-    }
+    
+    UIActivityIndicatorView *activityIndicator = [[UIActivityIndicatorView alloc]initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhite];
+    [activityIndicator startAnimating];
+    
+    _notifier = [[JSNotifier alloc]initWithTitle:@"Fetching Deals..."];
+    _notifier.accessoryView = activityIndicator;
+    [_notifier show];
+    
+    [self fetchDeals];
 }
 
 - (void) sessionCreated {
@@ -49,10 +50,10 @@
 }
 
 - (void) sessionCreationFailed {
-    [MBProgressHUD hideHUDForView:self.view animated:YES];
-    notify = [[JSNotifier alloc]initWithTitle:@"Error session not created"];
-    [notify setAccessoryView:[[UIImageView alloc]initWithImage:[UIImage imageNamed:@"NotifyX.png"]] animated:YES];
-    [notify show];
+    [_notifier hide];
+    _notifier = [[JSNotifier alloc]initWithTitle:@"Unable to create Session"];
+    [_notifier setAccessoryView:[[UIImageView alloc]initWithImage:[UIImage imageNamed:@"NotifyX.png"]] animated:YES];
+    [_notifier show];
 }
 
 - (void) refreshControlCallback {
@@ -88,53 +89,45 @@
         NSIndexPath *path = [_dealTableView indexPathForSelectedRow];
         Deal *selectedDeal = [_deals objectAtIndex:path.row];
         [dealDetail setDeal:selectedDeal];
-        [notify hide];
+        [_notifier hide];
     }
 }
 
 -(void) fetchDeals {
     
-    UIActivityIndicatorView *activityIndicator = [[UIActivityIndicatorView alloc]initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhite];
-    [activityIndicator startAnimating];
-    
-    notify = [[JSNotifier alloc]initWithTitle:@"Fetching Deals..."];
-    notify.accessoryView = activityIndicator;
-    [notify show];
-    
     [APObject searchObjectsWithSchemaName:@"deal"
-              withQueryString:nil
-              successHandler:^(NSDictionary *dict){
-                  
-                NSArray *dealsArray = [dict objectForKey:@"articles"];
-                  _deals = [[NSMutableArray alloc] init];
-                
-                  [dealsArray enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop){
-                      NSDictionary *dealDictionary = obj;
-                      
-                      Deal *deal = [[Deal alloc]init];
-                      deal.objectId = [dealDictionary objectForKey:@"__id"];
-                      deal.dealTitle = [dealDictionary objectForKey:@"title"];
-                      deal.dealImageUrl = [dealDictionary objectForKey:@"photo"];
-                      deal.dealStartDate = [dealDictionary objectForKey:@"startdate"];
-                      deal.dealEndDate = [dealDictionary objectForKey:@"enddate"];
-                      deal.dealDescription = [dealDictionary objectForKey:@"description"];
-                      deal.dealLocation = [dealDictionary objectForKey:@"location"];
-                      [_deals addObject:deal];
-                  }];
-                    [MBProgressHUD hideHUDForView:self.view animated:YES];
-                    [notify setAccessoryView:[[UIImageView alloc]initWithImage:[UIImage imageNamed:@"NotifyCheck.png"]] animated:YES];
-                    [notify setTitle:@"Deals Fetched" animated:YES];
-                    [notify hideIn:3.0];
-                    [_dealTableView reloadData];
-                    [self.refreshControl endRefreshing];
-              } failureHandler:^(APError *error) {
-                  [MBProgressHUD hideHUDForView:self.view animated:YES];
-                  [notify setAccessoryView:[[UIImageView alloc]initWithImage:[UIImage imageNamed:@"NotifyX.png"]] animated:YES];
-                  [notify setTitle:@"Error in fetching deals" animated:YES];
-                  [notify hideIn:3.0];
-
-                  [self.refreshControl endRefreshing];
-              }];
+                          withQueryString:nil
+                           successHandler:^(NSDictionary *dict){
+                               
+                               NSArray *dealsArray = [dict objectForKey:@"articles"];
+                               _deals = [[NSMutableArray alloc] init];
+                               
+                               [dealsArray enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop){
+                                   NSDictionary *dealDictionary = obj;
+                                   
+                                   Deal *deal = [[Deal alloc]init];
+                                   deal.objectId = [dealDictionary objectForKey:@"__id"];
+                                   deal.dealTitle = [dealDictionary objectForKey:@"title"];
+                                   deal.dealImageUrl = [dealDictionary objectForKey:@"photo"];
+                                   deal.dealStartDate = [dealDictionary objectForKey:@"startdate"];
+                                   deal.dealEndDate = [dealDictionary objectForKey:@"enddate"];
+                                   deal.dealDescription = [dealDictionary objectForKey:@"description"];
+                                   deal.dealLocation = [dealDictionary objectForKey:@"location"];
+                                   [_deals addObject:deal];
+                               }];
+                               [_notifier setAccessoryView:[[UIImageView alloc]initWithImage:[UIImage imageNamed:@"NotifyCheck.png"]] animated:YES];
+                               [_notifier setTitle:@"Deals Fetched" animated:YES];
+                               [_notifier hideIn:3.0];
+                               [_dealTableView reloadData];
+                               [self.refreshControl endRefreshing];
+                           } failureHandler:^(APError *error) {
+                               if(error.code != 8002) {
+                                   [_notifier setAccessoryView:[[UIImageView alloc]initWithImage:[UIImage imageNamed:@"NotifyX.png"]] animated:YES];
+                                   [_notifier setTitle:@"Error in fetching deals" animated:YES];
+                                   [_notifier hideIn:2.0];
+                                   [self.refreshControl endRefreshing];
+                               }
+                           }];
 }
 
 @end
