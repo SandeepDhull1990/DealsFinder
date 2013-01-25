@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		0ED499E6EAE44436BA77AF37 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4838FBC8DEB14352AD1ABF26 /* libPods.a */; };
+		183C85B216B207420097BFF1 /* NotifyCheck.png in Resources */ = {isa = PBXBuildFile; fileRef = 183C85AE16B207420097BFF1 /* NotifyCheck.png */; };
+		183C85B316B207420097BFF1 /* NotifyCheck@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 183C85AF16B207420097BFF1 /* NotifyCheck@2x.png */; };
+		183C85B416B207420097BFF1 /* NotifyX.png in Resources */ = {isa = PBXBuildFile; fileRef = 183C85B016B207420097BFF1 /* NotifyX.png */; };
+		183C85B516B207420097BFF1 /* NotifyX@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 183C85B116B207420097BFF1 /* NotifyX@2x.png */; };
 		610EA7DA16AEEB9C002046A0 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 610EA7D916AEEB9C002046A0 /* SWRevealViewController.m */; };
 		610EA7DE16AEEC57002046A0 /* reveal-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 610EA7DC16AEEC57002046A0 /* reveal-icon.png */; };
 		610EA7DF16AEEC57002046A0 /* reveal-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 610EA7DD16AEEC57002046A0 /* reveal-icon@2x.png */; };
@@ -29,18 +33,14 @@
 		9760C6B516A4132E00D62309 /* SlidingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9760C6B416A4132E00D62309 /* SlidingViewController.m */; };
 		9760C6C216A41A1D00D62309 /* DealsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9760C6C116A41A1D00D62309 /* DealsListViewController.m */; };
 		9767E2BA16A94A320018B0E1 /* StoreCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9767E2B916A94A320018B0E1 /* StoreCell.m */; };
-		9767E2C416A963740018B0E1 /* NavigationTopCreateStoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9767E2C316A963740018B0E1 /* NavigationTopCreateStoreViewController.m */; };
-		9767E2C716A963DF0018B0E1 /* MenuFindDealsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9767E2C616A963DF0018B0E1 /* MenuFindDealsViewController.m */; };
 		9767E2CD16A9661F0018B0E1 /* CreateDealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9767E2CC16A9661F0018B0E1 /* CreateDealViewController.m */; };
 		97BDBA5316A5A789001411E8 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97BDBA4F16A5A789001411E8 /* Accounts.framework */; };
 		97BDBA5416A5A789001411E8 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97BDBA5016A5A789001411E8 /* AdSupport.framework */; };
 		97BDBA5516A5A789001411E8 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 97BDBA5116A5A789001411E8 /* libsqlite3.0.dylib */; };
 		97BDBA5616A5A789001411E8 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97BDBA5216A5A789001411E8 /* Social.framework */; };
-		97C813B816AAF42D007ECCD4 /* NavigationTopCreateDealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97C813B716AAF42D007ECCD4 /* NavigationTopCreateDealViewController.m */; };
 		97C9474916AD9A7C00B707EC /* StoreImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 97C9474816AD9A7C00B707EC /* StoreImage.m */; };
 		97CB545C16A7EEF200E752B0 /* DealCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 97CB545B16A7EEF200E752B0 /* DealCell.m */; };
 		97CF711416A9228A0042AA65 /* Deal.m in Sources */ = {isa = PBXBuildFile; fileRef = 97CF711316A9228A0042AA65 /* Deal.m */; };
-		97CF711716A93C5D0042AA65 /* InitialSlidingStoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97CF711616A93C5C0042AA65 /* InitialSlidingStoreViewController.m */; };
 		97D1A69816A3D810000010B4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97D1A69716A3D810000010B4 /* UIKit.framework */; };
 		97D1A69A16A3D810000010B4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97D1A69916A3D810000010B4 /* Foundation.framework */; };
 		97D1A69C16A3D810000010B4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97D1A69B16A3D810000010B4 /* CoreGraphics.framework */; };
@@ -71,6 +71,10 @@
 
 /* Begin PBXFileReference section */
 		1724B85E3A6C4E4BBDA9B79B /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		183C85AE16B207420097BFF1 /* NotifyCheck.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NotifyCheck.png; sourceTree = "<group>"; };
+		183C85AF16B207420097BFF1 /* NotifyCheck@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "NotifyCheck@2x.png"; sourceTree = "<group>"; };
+		183C85B016B207420097BFF1 /* NotifyX.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NotifyX.png; sourceTree = "<group>"; };
+		183C85B116B207420097BFF1 /* NotifyX@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "NotifyX@2x.png"; sourceTree = "<group>"; };
 		4838FBC8DEB14352AD1ABF26 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		610EA7D816AEEB9C002046A0 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		610EA7D916AEEB9C002046A0 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
@@ -99,10 +103,6 @@
 		9760C6C116A41A1D00D62309 /* DealsListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DealsListViewController.m; sourceTree = "<group>"; };
 		9767E2B816A94A320018B0E1 /* StoreCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoreCell.h; sourceTree = "<group>"; };
 		9767E2B916A94A320018B0E1 /* StoreCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoreCell.m; sourceTree = "<group>"; };
-		9767E2C216A963740018B0E1 /* NavigationTopCreateStoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationTopCreateStoreViewController.h; sourceTree = "<group>"; };
-		9767E2C316A963740018B0E1 /* NavigationTopCreateStoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationTopCreateStoreViewController.m; sourceTree = "<group>"; };
-		9767E2C516A963DF0018B0E1 /* MenuFindDealsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuFindDealsViewController.h; sourceTree = "<group>"; };
-		9767E2C616A963DF0018B0E1 /* MenuFindDealsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuFindDealsViewController.m; sourceTree = "<group>"; };
 		9767E2C816A966010018B0E1 /* CreateStoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateStoreViewController.h; sourceTree = "<group>"; };
 		9767E2CB16A9661E0018B0E1 /* CreateDealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateDealViewController.h; sourceTree = "<group>"; };
 		9767E2CC16A9661F0018B0E1 /* CreateDealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateDealViewController.m; sourceTree = "<group>"; };
@@ -110,16 +110,12 @@
 		97BDBA5016A5A789001411E8 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		97BDBA5116A5A789001411E8 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
 		97BDBA5216A5A789001411E8 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
-		97C813B616AAF42D007ECCD4 /* NavigationTopCreateDealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationTopCreateDealViewController.h; sourceTree = "<group>"; };
-		97C813B716AAF42D007ECCD4 /* NavigationTopCreateDealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationTopCreateDealViewController.m; sourceTree = "<group>"; };
 		97C9474716AD9A7C00B707EC /* StoreImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoreImage.h; sourceTree = "<group>"; };
 		97C9474816AD9A7C00B707EC /* StoreImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoreImage.m; sourceTree = "<group>"; };
 		97CB545A16A7EEF200E752B0 /* DealCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DealCell.h; sourceTree = "<group>"; };
 		97CB545B16A7EEF200E752B0 /* DealCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DealCell.m; sourceTree = "<group>"; };
 		97CF711216A9228A0042AA65 /* Deal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Deal.h; sourceTree = "<group>"; };
 		97CF711316A9228A0042AA65 /* Deal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Deal.m; sourceTree = "<group>"; };
-		97CF711516A93C5C0042AA65 /* InitialSlidingStoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InitialSlidingStoreViewController.h; sourceTree = "<group>"; };
-		97CF711616A93C5C0042AA65 /* InitialSlidingStoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InitialSlidingStoreViewController.m; sourceTree = "<group>"; };
 		97D1A69316A3D810000010B4 /* AppacitiveDealsNearYou.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppacitiveDealsNearYou.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		97D1A69716A3D810000010B4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		97D1A69916A3D810000010B4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -180,6 +176,10 @@
 		6132CD3E16AE6B25009FEC58 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				183C85AE16B207420097BFF1 /* NotifyCheck.png */,
+				183C85AF16B207420097BFF1 /* NotifyCheck@2x.png */,
+				183C85B016B207420097BFF1 /* NotifyX.png */,
+				183C85B116B207420097BFF1 /* NotifyX@2x.png */,
 				610EA7E016AF01C5002046A0 /* photo_not_available_large.png */,
 				610EA7DC16AEEC57002046A0 /* reveal-icon.png */,
 				610EA7DD16AEEC57002046A0 /* reveal-icon@2x.png */,
@@ -214,18 +214,10 @@
 				97D406F716AD0DF000F3740C /* DealDetailViewController.m */,
 				97E675C116A477A600B69F36 /* StoreListViewController.h */,
 				97E675C216A477A600B69F36 /* StoreListViewController.m */,
-				9767E2C216A963740018B0E1 /* NavigationTopCreateStoreViewController.h */,
-				9767E2C316A963740018B0E1 /* NavigationTopCreateStoreViewController.m */,
 				9767E2C816A966010018B0E1 /* CreateStoreViewController.h */,
 				97D4070116AD5D6100F3740C /* CreateStoreViewController.m */,
-				97C813B616AAF42D007ECCD4 /* NavigationTopCreateDealViewController.h */,
-				97C813B716AAF42D007ECCD4 /* NavigationTopCreateDealViewController.m */,
 				9767E2CB16A9661E0018B0E1 /* CreateDealViewController.h */,
 				9767E2CC16A9661F0018B0E1 /* CreateDealViewController.m */,
-				9767E2C516A963DF0018B0E1 /* MenuFindDealsViewController.h */,
-				9767E2C616A963DF0018B0E1 /* MenuFindDealsViewController.m */,
-				97CF711516A93C5C0042AA65 /* InitialSlidingStoreViewController.h */,
-				97CF711616A93C5C0042AA65 /* InitialSlidingStoreViewController.m */,
 				97C9474716AD9A7C00B707EC /* StoreImage.h */,
 				97C9474816AD9A7C00B707EC /* StoreImage.m */,
 			);
@@ -425,6 +417,10 @@
 				610EA7DE16AEEC57002046A0 /* reveal-icon.png in Resources */,
 				610EA7DF16AEEC57002046A0 /* reveal-icon@2x.png in Resources */,
 				610EA7E116AF01C5002046A0 /* photo_not_available_large.png in Resources */,
+				183C85B216B207420097BFF1 /* NotifyCheck.png in Resources */,
+				183C85B316B207420097BFF1 /* NotifyCheck@2x.png in Resources */,
+				183C85B416B207420097BFF1 /* NotifyX.png in Resources */,
+				183C85B516B207420097BFF1 /* NotifyX@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -481,12 +477,8 @@
 				97E675C316A477A600B69F36 /* StoreListViewController.m in Sources */,
 				97CB545C16A7EEF200E752B0 /* DealCell.m in Sources */,
 				97CF711416A9228A0042AA65 /* Deal.m in Sources */,
-				97CF711716A93C5D0042AA65 /* InitialSlidingStoreViewController.m in Sources */,
 				9767E2BA16A94A320018B0E1 /* StoreCell.m in Sources */,
-				9767E2C416A963740018B0E1 /* NavigationTopCreateStoreViewController.m in Sources */,
-				9767E2C716A963DF0018B0E1 /* MenuFindDealsViewController.m in Sources */,
 				9767E2CD16A9661F0018B0E1 /* CreateDealViewController.m in Sources */,
-				97C813B816AAF42D007ECCD4 /* NavigationTopCreateDealViewController.m in Sources */,
 				97D406F816AD0DF000F3740C /* DealDetailViewController.m in Sources */,
 				97D406FC16AD1D9700F3740C /* Store.m in Sources */,
 				97D4070216AD5D6100F3740C /* CreateStoreViewController.m in Sources */,
