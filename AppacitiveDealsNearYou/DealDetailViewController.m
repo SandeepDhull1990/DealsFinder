@@ -84,6 +84,7 @@
                                    if(error.code == 7006) {
                                        [_notifier setTitle:@"You have already upvoted this deal" animated:YES];
                                    } else {
+                                       self.upvoteButton.enabled = YES;
                                        [_notifier setTitle:@"Error while updating vote count" animated:YES];
                                    }
                                    [_notifier hideIn:2.0];
