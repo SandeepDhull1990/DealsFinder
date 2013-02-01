@@ -62,7 +62,6 @@
     [_upvoteButton setEnabled:NO];
 
     APUser *currentUser = [APUser currentUser];
-    
     APConnection *connection = [APConnection connectionWithRelationType:@"vote"];
     [connection createConnectionWithObjectAId:currentUser.objectId
                                     objectBId:self.deal.objectId
@@ -80,6 +79,7 @@
                                    [_notifier hideIn:2.0];
                                    
                                } failureHandler:^(APError *error) {
+                                   NSLog(@"Error is %@" ,[error description]);
                                    [_notifier setAccessoryView:[[UIImageView alloc]initWithImage:[UIImage imageNamed:@"NotifyX.png"]] animated:YES];
                                    if(error.code == 7006) {
                                        [_notifier setTitle:@"You have already upvoted this deal" animated:YES];
